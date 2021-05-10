@@ -1,0 +1,47 @@
+@charset "UTF-8";
+/* css/src/layout_001.css */
+
+/* reset.css */
+  html, body { margin:0; }
+
+  /* layout_design.css */
+  #wrap {
+    width:600px; height:auto;
+    margin:auto;
+    }
+
+    /* #header ==================== */
+    #header {
+      width:100%; height:100px;
+      background-color: #f07;
+    }
+    /* #section ==================== */
+    #section {
+      width:100%; height:auto;
+      background-color: #fa0;
+    }
+
+    .sect_01 {
+      float:left;
+      width:40%; height:300px;
+      background-color: #329664;
+    }
+    .sect_02 {
+      float:left;
+      width:60%; height:300px;
+      background-color: #555;
+    }
+
+    /* #footer ==================== */
+    #footer {
+      width:100%; height:100px;
+      background-color: #03f;
+    }
+
+
+
+    /*
+    * css에서 width:auto -> 가로크기 100%, - 부모의 크기를 따름.
+    height:auto -> 자식요소의 크기만큼 - 자식의 크기를 따름.
+
+    */
