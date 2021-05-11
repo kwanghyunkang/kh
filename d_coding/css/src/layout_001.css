@@ -15,8 +15,10 @@
       width:100%; height:100px;
       background-color: #f07;
     }
+
     /* #section ==================== */
     #section {
+      /* overflow:auto; */
       width:100%; height:auto;
       background-color: #fa0;
     }
@@ -26,10 +28,24 @@
       width:40%; height:300px;
       background-color: #329664;
     }
+
     .sect_02 {
       float:left;
       width:60%; height:300px;
       background-color: #555;
+    }
+    
+    /* .horizontal { 
+      margin:0; padding:0; border:0; 
+      clear:both; 
+    } */
+
+    #section:after 
+    #section::after {
+      content: " ";
+      display:block;
+      width:100%; height:0;
+      clear:both;
     }
 
     /* #footer ==================== */
@@ -42,13 +58,24 @@
 
     /*
     * css에서 width:auto -> 가로크기 100%, - 부모의 크기를 따름.
-    height:auto -> 자식요소의 크기만큼 - 자식의 크기를 따름.
+      height:auto -> 자식요소의 크기만큼 - 자식의 크기를 따름.
 
+      inline요소 = 혼자 값을 가질 수 없음.
+       block요소 = 값을 채워줌 
     */
 
-    /* float 속성값
-      none - 띄우지 않음 (기본값)
-      left - 왼쪽에 띄움
-      right - 오른쪽에 띄움
-      initial - 기본값으로 설정함
-      inherit - 부모 요소로부터 상속 */
+    /* float 속성값 : 내용을 씀과 동시에 살짝 걸쳐져있는 걸쇠를 빼버리는 것
+                     블록요소를 가로로 배치하기위해 float을 사용했다면,
+                     사용하려는 요소의 형제요소 모두 float을 사용해야 함.
+      float left || right
+      
+      clear : float과 형제로 마지막에 배치!
+      clear 기능은 대체로 float과 같이 사용 x
+
+      float을 사용하면
+      해당요소는 띄워주는 역할을 해서 부모요소의 높이값이 auto일 경우,
+      실제 부모요소의 높이는 0이 된다.
+      이를 해결하기 위해 float처리된 요소의 형제요소 중 마지막 요소에
+      clear속성을 부여하면 해결이 된다.
+      단, clear속성은 반드시 block요소이어야함.
+    */
