@@ -31,12 +31,12 @@ h3 { width:100%; text-align:center; }
   background-color: #cdf;}
 
 .other_type {background-color: #daf;}
-.height_fix_type {background-color: #dfc;}
+.height_fix_type {height:900px; background-color: #dfc;}
 .ghost_type {background-color: #dca;}
 
-.overflow_type > p ,
-.other_type > p ,
-.height_fix_type > div ,
+.overflow_type > p,
+.other_type > p,
+.height_fix_type > div,
 .ghost_type > li {
   float:left;
   width:49%; height:200px;
