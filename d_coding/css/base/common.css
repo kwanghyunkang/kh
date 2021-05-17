@@ -1,0 +1,10 @@
+/* @charset "UTF-8"; */
+
+/* common.css */
+
+.clearfix:after,
+.clearfix::after {
+  content:" ";
+  display:block;
+  clear:both 
+}
