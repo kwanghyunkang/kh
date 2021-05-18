@@ -1,0 +1,103 @@
+@charset "UTF-8";
+
+/* layout_003.css */
+
+/* reset.css */
+html, body, div, 
+h1, h2, h3, h4, h5, h6,
+ul, ol, li, dl, dt, dd 
+  { margin:0; padding:0; border:0; outline:0; }
+ul, ol, li { list-style:none; }
+
+/* common.css */
+.clearfix:after,
+.clearfix::after {
+  content:" ";
+  display:block;
+  clear:both
+}
+
+/* -------------------------------------------------------------- */
+#wrap {
+  width:1600px; height:auto;
+  margin:0;
+  box-sizing:border-box;
+  background-color: #fff;
+}
+#wrap > div {
+  float:left;
+}
+
+/* -------------------------------------------------------------- */
+#header {
+  width:100%; height:150px;
+  padding:50px;
+  background-color: #eee;
+}
+  .logo {
+    float:left;
+    width:250px; height:80px;
+    margin-top:34px; margin-bottom:36px;
+    margin-left:50px; margin-right:25px;
+    background-color: #0bf;
+  }
+  .header_02 {
+    float:left;
+    width:850px; height:80px;
+    margin-top:34px; margin-bottom:36px;
+    margin-left:50px; margin-right:50px;
+    background-color: #0bf;
+  }
+  .header_03 {
+    float:right;
+    width:250px; height:80px;
+    margin-top:34px; margin-bottom:36px;
+    margin-left:25px; margin-right:50px;
+    background-color: #0bf;
+  }
+
+#adview {
+  width:100%; height:750px;
+  padding:50px;
+  background-color: #ccc;
+}
+#localNav {
+  width:100%; height:250px;
+  margin-bottom:50px;
+  padding:50px;
+  background-color: #aaa;
+}
+#popularContent {
+  width:100%; height:600px;
+  padding:50px;
+  background-color: #ccc;
+}
+#newContent {
+  width:100%; height:900px;
+  margin-bottom:80px;
+  padding:50px;
+  background-color: #eee;
+}
+#recommendedContent {
+  width:100%; height:600px;
+  margin-bottom:80px;
+  padding:50px;
+  background-color: #ccc;
+}
+#community {
+  width:100%; height:800px;
+  margin-bottom:80px;
+  padding:50px;
+  background-color: #eee;
+}
+#miniAd {
+  width:100%; height:400px;
+  margin-bottom:80px;
+  padding:50px;
+  background-color: #aaa;
+}
+#footer {
+  width:100%; height:200px;
+  padding:50px;
+  background-color: #555;
+}
