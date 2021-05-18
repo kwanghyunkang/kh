@@ -17,10 +17,11 @@ ul, ol, li { list-style:none; }
   clear:both
 }
 
-/* -------------------------------------------------------------- */
+/* wrap ---------------------------------------------------------------- */
 #wrap {
-  width:1600px; height:auto;
+  width:1500px; height:auto;
   margin:0;
+  margin-left:50px; margin-right:50px;
   box-sizing:border-box;
   background-color: #fff;
 }
@@ -28,7 +29,7 @@ ul, ol, li { list-style:none; }
   float:left;
 }
 
-/* -------------------------------------------------------------- */
+/* header -------------------------------------------------------------- */
 #header {
   width:100%; height:150px;
   padding:50px;
@@ -38,66 +39,151 @@ ul, ol, li { list-style:none; }
     float:left;
     width:250px; height:80px;
     margin-top:34px; margin-bottom:36px;
-    margin-left:50px; margin-right:25px;
     background-color: #0bf;
   }
   .header_02 {
     float:left;
     width:850px; height:80px;
     margin-top:34px; margin-bottom:36px;
-    margin-left:50px; margin-right:50px;
+    margin-left:75px; margin-right:75px;
     background-color: #0bf;
   }
   .header_03 {
     float:right;
     width:250px; height:80px;
     margin-top:34px; margin-bottom:36px;
-    margin-left:25px; margin-right:50px;
     background-color: #0bf;
   }
 
+/* adview --------------------------------------------------------------- */
 #adview {
   width:100%; height:750px;
   padding:50px;
   background-color: #ccc;
 }
+  .view_outer {
+    width:1300px; height:600px;
+    margin:auto;
+    margin-top:28px; margin-bottom:28px;
+    background-color: #0bf;
+  }
+  .view_indicator {
+    width:850px; height:60px;
+    margin:auto;
+    background-color: #0bf;
+  }
+
+/* localNav -------------------------------------------------------------- */
 #localNav {
   width:100%; height:250px;
-  margin-bottom:50px;
   padding:50px;
+  margin-bottom:50px;
   background-color: #aaa;
 }
+  .local_nav_outer {
+    width:1500px; height:196px;
+    margin:auto;
+    background-color: #0bf;
+  }
+
+/* popularContent -------------------------------------------------------------- */
 #popularContent {
   width:100%; height:600px;
-  padding:50px;
+  padding-left:50px; padding-right:50px;
   background-color: #ccc;
 }
+  .h3 {
+    width:1300px; height:50px;
+    margin:auto;
+    margin-bottom:30px;
+    background-color: #0bf;
+  }
+  .pop_con_area {
+    width:1300px; height:470px;
+    margin:auto;
+    background-color: #0bf;
+  }
+
+/* newContent -------------------------------------------------------------- */
 #newContent {
   width:100%; height:900px;
   margin-bottom:80px;
-  padding:50px;
+  padding-left:50px; padding-right:50px;
   background-color: #eee;
 }
+  #newContent > .h3 {
+    width:1300px; height:50px;
+    margin:auto;
+    margin-top:60px; margin-bottom:30px;
+    background-color: #0bf;
+  }
+  .new_con_area {
+    width:1300px; height:700px;
+    margin:auto;
+    background-color: #0bf;
+  }
+
+/* recommendedContent -------------------------------------------------------------- */
 #recommendedContent {
   width:100%; height:600px;
   margin-bottom:80px;
-  padding:50px;
+  padding-left:50px; padding-right:50px;
   background-color: #ccc;
 }
+  #recommendedContent > .h3 {
+    width:1300px; height:50px;
+    margin:auto;
+    margin-top:30px; margin-bottom:30px;
+    background-color: #0bf;
+  }
+  .recom_con_area {
+    width:1300px; height:440px;
+    margin:auto;
+    background-color: #0bf;
+  }
+
+/* community -------------------------------------------------------------- */
 #community {
   width:100%; height:800px;
   margin-bottom:80px;
-  padding:50px;
+  padding-left:50px; padding-right:50px;
   background-color: #eee;
 }
+  #community > .h3 {
+    width:1300px; height:50px;
+    margin:auto;
+    margin-top:60px; margin-bottom:50px;
+    background-color: #0bf;
+  }
+  .community_area {
+    width:1300px; height:600px;
+    margin:auto;
+    background-color: #0bf;
+  }
+
+/* miniAd -------------------------------------------------------------- */
 #miniAd {
   width:100%; height:400px;
   margin-bottom:80px;
-  padding:50px;
+  padding-left:50px; padding-right:50px;
   background-color: #aaa;
 }
+  .mini_ad_auto {
+    width:1500px; height:300px;
+    margin:auto;
+    margin-top:40px;
+    background-color: #0bf;
+  }
+
+/* footer -------------------------------------------------------------- */
 #footer {
   width:100%; height:200px;
-  padding:50px;
+  padding-left:50px; padding-right:50px;
   background-color: #555;
 }
+  .footer {
+    width:1300px; height:140px;
+    margin:auto;
+    margin-top:22px;
+    background-color: #0bf;
+  }
