@@ -3,7 +3,7 @@
 /* layout_003.css */
 
 /* reset.css */
-html, body, div, 
+html, body, 
 h1, h2, h3, h4, h5, h6,
 ul, ol, li, dl, dt, dd 
   { margin:0; padding:0; border:0; outline:0; }
@@ -48,6 +48,15 @@ ul, ol, li { list-style:none; }
     margin-left:75px; margin-right:75px;
     background-color: #0bf;
   }
+    .header_02 > div {
+      float:left;
+      width:150px; height:70px;
+      margin:auto;
+      margin-top:5px; margin-bottom:5px;
+      margin-right:10px; margin-left:10px;
+      background-color: #ff0;
+    }
+
   .header_03 {
     float:right;
     width:250px; height:80px;
@@ -72,6 +81,13 @@ ul, ol, li { list-style:none; }
     margin:auto;
     background-color: #0bf;
   }
+    .view_indicator > div {
+      float:left;
+      width:120px; height:40px;
+      margin:auto;
+      margin-left:20px; margin-right:20px;
+      background-color: #ff0;
+    }
 
 /* localNav -------------------------------------------------------------- */
 #localNav {
@@ -85,6 +101,13 @@ ul, ol, li { list-style:none; }
     margin:auto;
     background-color: #0bf;
   }
+    .local_nav_outer > div {
+      float:left;
+      width:200px; height:150px;
+      margin:auto;
+      margin-right:30px;
+      background-color: #ff0;  
+    }
 
 /* popularContent -------------------------------------------------------------- */
 #popularContent {
@@ -102,6 +125,18 @@ ul, ol, li { list-style:none; }
     width:1300px; height:470px;
     margin:auto;
     background-color: #0bf;
+  }
+  .poo_con_area ul {
+    float:left;
+    margin:auto;
+    width:350px; height:430px;
+    background-color: #aaf;
+  }
+  .pop_con_area li {
+    float:left;
+    margin:auto;
+    width:330px; height:200px;
+    background-color: #a0f;
   }
 
 /* newContent -------------------------------------------------------------- */
@@ -141,6 +176,12 @@ ul, ol, li { list-style:none; }
     margin:auto;
     background-color: #0bf;
   }
+  .recom_con_area > div {
+    float:left;
+    width:300px; height:400px;
+    margin-right:10px;
+    background-color: #d5d;
+  }
 
 /* community -------------------------------------------------------------- */
 #community {
@@ -174,6 +215,24 @@ ul, ol, li { list-style:none; }
     margin-top:40px;
     background-color: #0bf;
   }
+  .mini_ad_auto > .miniad1 {
+    float:left;
+    width:750px; height:300px;
+    margin-right:10px;
+    background-color: #ff0;
+  }
+  .mini_ad_auto > .miniad2 {
+    float:right;
+    width:350px; height:300px;
+    margin-left:10px;
+    background-color: #ff0;
+  }
+  .mini_ad_auto > .miniad3 {
+    float:right;
+    width:350px; height:300px;
+    margin-left:10px;
+    background-color: #ff0;
+  }
 
 /* footer -------------------------------------------------------------- */
 #footer {
@@ -186,4 +245,15 @@ ul, ol, li { list-style:none; }
     margin:auto;
     margin-top:22px;
     background-color: #0bf;
+  }
+  .footer > .footer1 {
+    float:left;
+    width:750px; height:140px;
+    background-color: #ff0;
+  }
+  .footer > .footer2 {
+    float:right;
+    width:280px; height:76px;
+    margin-top:30px; margin-bottom:30px;
+    background-color: #ff0;
   }
