@@ -1,0 +1,262 @@
+/* css/src/layout_003_result.css */
+
+/* common */
+.blind {
+  display: block;
+  width:0; height:0;
+  position: absolute; z-index:-1;
+  width:200px; height:30px; background-color: #fff;
+  overflow:hidden;
+}
+
+.first_float > li { float:left; }
+.first_float > li:first-child { margin-left:0; }
+
+
+/* I.R 기법 (image replace 기법)
+  - 해당하는 요소에 이미지를 글자를 대처하여 사용하는 기법
+  - 필요한 내용이지만 눈에 보이지 않게 처리하는 방법
+
+  - display:block; (사이즈를 가지고 밑으로 떨어트림)
+    width:0; height:0;
+    overflow:hidden;
+    position:absolute; z-index:-1;
+    (display:block의 현상을 방지하기 위해 absolute 사용[밑으로 떨어트리는것 방지])
+
+  I.A 기법 (image Architecture 기법)
+  - 정보를 구조화 (h1 > h2 > h3 ...)
+*/
+
+
+/* #wrap ----------------------------------------------------------------------- */
+#wrap {
+  width:1600px; height:auto; min-height:500px;
+  margin:auto; background-color: #ddd;
+}
+
+#wrap > div {
+  width:100%;
+}
+
+/* headBox --------------------------------------------------------------------- */
+#headBox {
+  position:relative; z-index:0;
+  height:auto; min-height:150px;
+  padding:34px 50px 0; box-sizing: border-box;
+  background-color: #eee;
+}
+
+  h1 {
+    float:left;
+    width:250px; height:80px;
+    margin-right:75px;
+    background-color: #7cf;
+  }
+  .global_nav {
+    position:absolute;
+    top:34px; left:0; right:0; margin:auto;
+    width:850px; height:auto; min-height:80px;
+    padding:5px 10px; box-sizing: border-box;
+    background-color: #77f;
+  }
+
+  .global_nav ul {
+    width:100%; height:auto;
+    background-color: #fff;
+  }
+  .global_nav li {
+    float:left;
+    width:150px; height:70px;
+    margin-left:20px;
+    background-color: #fc0;
+  }
+  .global_nav li:first-child {
+    margin-left:0;
+  }
+  .global_nav a {
+    display: block;
+    width: 100%; height: 100%;
+    text-align:center;
+    text-transform:uppercase;
+    line-height:70px;
+  }
+
+
+  .user_nav {
+    float:right;
+    width:250px; height:80px;
+    background-color: #7cf;
+  }
+
+/* adViewBox --------------------------------------------------------------------- */
+#adViewBox {
+  position: relative;
+  height:auto; min-height:750px;
+  padding-top:28px; box-sizing: border-box;
+  background-color: #fac;
+}
+.view_indicator {
+  position: absolute;
+  bottom:28px; left:0; right:0;
+  width:850px; height:auto;
+  margin:auto;
+  padding: 10px; box-sizing: border-box;
+  background-color: #7cf;
+}
+
+.view_indicator ul {
+  width:100%; height:auto;
+}
+.view_indicator li {
+  float:left;
+  width: 120px; height: 40px;
+  background-color: #fc0;
+  margin-left: 20px;
+}
+.view_indicator li:first-child {
+  margin-left: 0;
+}
+.view_indicator a {
+  display:block;
+  width: 120px; height: 40%;
+  border-radius:30px;
+  background-color: #fc0;
+}
+
+.view_indicator a:focus,
+.action a {
+  background-color: #afa;
+}
+
+
+.view_outer {
+  width:1300px; height:600px;
+  margin:auto;
+  background-color: #7cf;
+}
+
+/* localNavBox ------------------------------------------------------------------- */
+#localNavBox {
+  height:auto; min-height:250px;
+  padding:18px 50px; box-sizing: border-box;
+  background-color: #dec;
+  margin-bottom:50px;
+}
+  .local_nav_outer {
+    width:100%; max-width:1600px; height:196px;
+    margin:auto;
+    background-color: #4ad;
+  }
+
+/* issue_content_wrap ------------------------------------------------------------ */
+#issue_content_wrap {
+  width:100%; height:auto;
+}
+
+/* popularContentBox ------------------------------------------------------------- */
+#popularContentBox {
+  height:auto; min-height:600px;
+  background-color: #eee;
+}
+
+  h3 {
+    width:1300px; height:50px;
+    margin:auto; margin-bottom:30px;
+    background-color: #57a;
+  }
+
+
+  .container {
+    width:1300px; height:auto; min-height: 300px;
+    margin:auto;
+    background-color: #7cf;
+  }
+
+
+  .pop_con_area {
+    width:1300px; height:470px;
+    margin:auto;
+    background-color: #7cf;
+  }
+
+
+/* newContentBox ----------------------------------------------------------------- */
+#newContentBox {
+  height:auto; min-height:900px;
+  margin-bottom:80px;
+  padding-top:60px; box-sizing: border-box;
+  background-color: #bbb;
+}
+  .new_con_area {
+    width:1300px; height:700px;
+    margin:auto;
+    background-color: #7cf;
+  }
+
+/* recommendedContentBox ---------------------------------------------------------- */
+#recommendedContentBox {
+  height:auto; min-height:600px;
+  margin-bottom:80px;
+  padding-top: 30px; box-sizing: border-box;
+  background-color: #eee;
+}
+  .recom_con_area {
+    width:1300px; height:440px;
+    margin:auto;
+    background-color: #7cf;
+  }
+
+/* communityBox ------------------------------------------------------------------- */
+#communityBox {
+  height:auto; min-height:800px;
+  margin-bottom:80px;
+  padding-top: 60px; padding-bottom: 30px; box-sizing: border-box;
+  background-color: #eee;
+}
+
+.com_con_area {
+  width:1300px; height:600px;
+  margin:auto;
+  background-color: #7cf;
+}
+
+
+/* miniAdBox ---------------------------------------------------------------------- */
+#miniAdBox {
+  height:auto; min-height:400px;
+  margin-bottom:80px;
+  padding:40px; box-sizing: border-box;
+  background-color: #eee;
+}
+
+.mini_ad_outer {
+  width:1500px; height:300px;
+  margin:auto;
+  background-color: #7cf;
+}
+
+/* footBox ------------------------------------------------------------------------- */
+#footBox {
+  height:auto; min-height:200px;
+  padding-top: 22px;
+  background-color: #eee;
+}
+
+.site_info {
+  width:1300px; height:140px;
+  margin:auto;
+  background-color: #7cf;
+}
+
+
+/* ---------------------------------------------------------------------------------
+  - css 작성 순서
+  * display : block, inline, inline-block, none
+  * position, top, left, right, bottom, z-index
+  * width - height
+  * margin - padding - border - box-sizing
+  * font
+  * background
+  * effect
+  * etc
+*/
