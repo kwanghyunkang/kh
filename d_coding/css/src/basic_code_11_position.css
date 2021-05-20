@@ -1,0 +1,80 @@
+/* css/basic_code_11_position.css */
+
+#wrap {
+  width:900px; height:500px;
+  margin:auto;
+  background-color: #ddd;
+}
+
+.part {
+  width:90%; height:200px;
+  margin:auto; margin-top:20px;
+  padding:20%; box-sizing: border-box;
+  border-top:1px solid #777;
+  background-color: #fff;
+}
+
+.part > ul {
+  width:100%; height:100%;
+  border:1px solid #07a;
+  box-sizing: border-box;
+}
+
+.part li {
+  float:left;
+  width:100px; height:100px;
+  text-align:cetner;
+  line-height:100px;
+  color:#fff;
+  font-weight: 900;
+  cursor:pointer;
+}
+
+.part li:hover {
+  color:#333;
+  background-color: #761;
+}
+
+
+.default {background-color: #585;}
+.static {background-color: #aad;}
+.fixed {background-color: #077;}
+.absolute {background-color: #c0c;}
+.absolute2 {background-color: #55f;}
+.relative {background-color: #cac;}
+
+/* ------------------------------------------------------------ */
+
+.part ul {
+  position: relative;
+  z-index:10;
+}
+.static {
+  position:static;
+  top:100px;
+}
+.fixed {
+  position:fixed;
+  top:0; left:0;
+  z-index:1;
+}
+.absolute {
+  position:absolute;
+  top:50px; left:50px;
+}
+.absolute2 {
+  position:absolute;
+  bottom:100px; left:50px;
+  z-index:-1
+}
+.relative {
+  position:relative;
+  top:110px; right:-200px
+}
+
+/* 
+  * position은 정말 필요한 경우 사용 
+  * popsition 기능은 마지막에 필요한 위치를 파악해서 각 위치의 설계를 한 다음에 사용
+  * position의 z-index 값은 가장 큰 범위에서부터 설계하는 것이 좋음.
+  * inline 요소 (특히 a, input, buttom 같은 focus가 가능한 요소는 position을 사용하지 않는것을 권장.) 
+*/
