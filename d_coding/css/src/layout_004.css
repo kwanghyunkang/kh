@@ -1,0 +1,26 @@
+/* css/src/layout_004.css */
+@charset "UTF-8";
+
+@import url("../part/layout_004_wrap.css");
+@import url("../part/layout_004_headBox.css");
+@import url("../part/layout_004_viewBox.css");
+@import url("../part/layout_004_footBox.css");
+
+/* commmon, header, section, article, footer */
+
+/* css파일은
+    하나의 문서에서 가급적 200줄을 넘지 않는 것이 원칙
+    너무 많은 라인을 만들어서 찾기 어렵게 하는 것보다,
+    파일을 나눠서 관리하기 용이하게 제작
+*/
+
+/* kakao(다음)에서 사용하는 네이밍기법
+   - id이름은 camelCase
+   - class 이름은 under_score
+   - 이름을 지을때, 특수문자는 "_"
+   - 숫자는 뒤에 2자리 이상
+   - 큰 범위에 해당하는 경우 id로 영역
+   - level 1 - id, box ( conBox )
+   - level 2 - class, 상위이름_wrap ( conBox_wrap )
+   - level 3 - class, 상위이름_추가기능_area ( con_news_area )
+ */
