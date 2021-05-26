@@ -1,0 +1,54 @@
+/* css/src/gcass_main1.css */
+
+/* wrap ====================================== */
+#wrap {
+  width:980px; height:auto; min-height:850px;
+  margin:auto;
+  background-color: #eee;
+}
+/* headBox =================================== */
+#headBox {
+  width: 250px; height:auto; min-height: 710px;
+  background-color: #888;
+}
+h1 {
+  width:150px; height: 100px;
+  margin:auto;
+  background-color: #fff;
+}
+  #navBox {
+    width: 130px; height:500px;
+    margin:auto; margin-top:30px;
+    background-color: #fff;
+  }
+  #navBox > ul > li {
+    width:120px; height:40px;
+    margin:auto; margin-bottom:10px;
+    background-color: #aaa;
+  }
+
+/* sideBox =================================== */
+#sideBox {
+  width: 980px; height: 30px;
+  background-color: #ddd;
+}
+
+#sideBox > ul > li {
+  float:left;
+}
+
+/* footBox =================================== */
+#footBox {
+  width:980px; height:110px;
+  padding:30px; box-sizing: border-box;
+  background-color: #aaa;
+}
+h2 {
+  width:100px; height:40px;
+  background-color: #fff;
+}
+.foot_address_area {
+  float:left;
+  width:100px; height:100px;
+  background-color: #ddd;
+}
