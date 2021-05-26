@@ -1,0 +1,38 @@
+/* ../part/gcass_main1/wrap.css */
+
+/* 사용된 색
+    gray1   : #adadad;
+    gray2   : #888;
+    gray3   : #757575;
+    gray4   : #555;
+    yellow1 : #fff30d;
+    yellow2 : #baa50c;
+    white   : #fff;
+ */
+
+ /* root : 어떤 위치가 아닌 기본 세팅 (시작전) */
+ :root {
+   /* 변수지정
+    원하는 값을 지정한 이름에 담기 (기능을 쓰기 위해 미리 등록) */
+  --color-gray1   : #adadad;
+  --color-gray2   : #888;
+  --color-gray3   : #757575;
+  --color-gray4   : #555;
+  --color-yellow1 : #fff30d;
+  --color-yellow2 : #baa50c;
+  --color-white   : #fff;
+
+  --border-line1  : 1px solid #999;
+ }
+#gcasswrap {
+  position:relative;
+  width:980px; height:auto;
+  margin:auto;
+  padding-top:30px;
+  background-color: #ddd;
+}
+
+.container {
+  width: 980px; height:auto; min-height:500px;
+  background-color: #ffc;
+}
