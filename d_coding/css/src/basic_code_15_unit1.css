@@ -1,0 +1,154 @@
+/* css/src/basic_code_15_unit1,css */
+
+/* part ============================================= */
+.part {
+  width:800px; height:auto;
+  margin:auto;
+  margin-bottom:100px; 
+  padding:20px;
+  border:1px solid #333;
+  background-color: #ddd;
+}
+
+.level_01 {
+  box-sizing: border-box;
+  border:1px solid #f00;
+  color:#f00;
+  background-color: rgba(255,0,0,0.2);
+}
+
+.level_02 {
+  box-sizing: border-box;
+  border:1px solid #ff0;
+  color:#ff0;
+  background-color: rgba(255,255,0,0.2);
+}
+
+.level_03 {
+  box-sizing: border-box;
+  display: block;
+  border:1px solid #0f0;
+  color:#0f0;
+  background-color: rgba(0,255,0,0.2);
+}
+.level_04 {
+  box-sizing: border-box;
+  display: block;
+  border:1px solid #171717;
+  color:#171717;
+  background-color: rgba(17,17,17,0.1);
+}
+i {
+  font-style:normal;
+  box-sizing: border-box;
+  display: block;
+  border:1px solid #ddd;
+  color:#ddd;
+  background-color: rgba(200,200,200,0.5);
+}
+h3 { margin-bottom:30px;}
+/* ======================================= */
+:root {
+  font-size:16px;
+}
+
+/* px ==================================== */
+.pixel .level_01 { 
+  width:400px; height: 400px; font-size:40px; }
+.pixel .level_02 { /* 부모기준의 50% */
+  width:200px; height:200px; font-size:20px; }
+.pixel .level_03 { /* 부모기준의 150% */
+  width:300px; height:300px;  font-size:30px; }
+.pixel .level_04 { /* 부모기준의 50% */
+  width:150px; height:150px; font-size:15px; }
+.pixel i { /* 부모기준의 50% */
+  width:75px; height:75px; font-size:7.5px; }
+
+/* pt 16px -> 12pt ===================================== */
+.point .level_01 {
+  width:300pt; height:300pt; font-size:30pt; }
+.point .level_02 {
+  width:150pt; height:150pt; font-size:15pt; }
+.point .level_03 {
+  width:225pt; height:225pt; font-size:22.5pt; }
+.point .level_04 {
+  width:112.5pt; height:112.5pt; font-size:11.25pt; }
+.point i {
+  width:56.25pt; height:56.25pt; font-size:5.625pt; }
+
+/* % : 부모의 크기가 없는 경우는 최초설정, 
+  부모의 크기가 존재하면 부모기준 ====================== */
+.percent .level_01 {
+  width:400px; height:400px; font-size:250%;
+}
+.percent .level_02 {
+  width:50%; height:50%; font-size:50%;
+}
+.percent .level_03 {
+  width:150%; height:150%; font-size:150%;
+}
+.percent .level_04 {
+  width:50%; height:50%; font-size:50%;
+}
+.percent i {
+  width:50%; height:50%; font-size:50%;
+}
+
+
+/* em 
+  - 최초설정시에는 :root의 서체크기를 기준으로 font-size가 적용되지만,
+  em단위의 서체크기를 지정시 width,height는 바로 font-size에 따라간다.
+  이후 자식요소는 동일요소에있는 font-size를 따라가거나 없을경우,
+  부모의 font-size를 따라감
+  - font-size는 부모의 서체 크기가 있다면 부모의 크기를 따라간다. =================== */
+.em .level_01 {
+  width:25em; height:25em; font-size:2.5em;
+}
+.em .level_02 {
+  width:12.5em; height:12.5em;
+}
+.em .level_03 {
+  width:18.75em; height:18.75em;
+}
+.em .level_04 {
+  width:9.375em; height:9.375em;
+}
+.em i {
+  width:4.6875em; height:4.6875em;
+}
+
+
+/* rem ===================================================== */
+.rem .level_01 {
+  width: 400px; height: 400px;
+  width: 25rem; height: 25rem;
+  font-size: 40px;
+  font-size: 2.5rem;
+}
+.rem .level_02 {
+  width: 200px; height: 200px;
+  width: 12.5rem; height: 12.5rem;
+  font-size:20px;
+  font-size: 1.25rem;
+}
+.rem .level_03 {
+  width: 300px; height: 300px;
+  width: 18.75rem; height: 18.75rem;
+  font-size: 30px;
+  font-size: 1.875rem;
+}
+.rem .level_04 {
+  width: 150px; height: 150px;
+  width: 9.375rem; height: 9.375rem;
+  font-size: 15px;
+  font-size: 0.9375rem;
+} 
+.rem i {
+  width: 75px; height: 75px;
+  width: 4.6875rem; height: 4.6875rem;
+  font-size: 7.5px;
+  font-size: 0.46875rem;
+}
+/* rem : root값에 기준하여 박스크기를 맞춘다.
+  만약 root값이 없을경우, 16px로 기준 */
+

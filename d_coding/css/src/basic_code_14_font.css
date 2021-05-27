@@ -1,0 +1,135 @@
+/* css/src/basic_code_14_font.css */
+
+#wrap {
+  width: 960px; height:auto;
+  margin:auto;  padding:20px;
+  border:1px solid #777;
+}
+
+ul {
+  width: 100%; height:auto;
+  padding:10px; box-sizing: border-box;
+  background-color: #fdd;
+}
+
+li {
+  width: 100%; height:40px;
+  margin-bottom:10px;
+  padding:5px; box-sizing: border-box;
+  border:1px solid #07a;
+}
+
+/* li:nth-child ==================================================== */
+li:nth-child(1) {
+  font-family:Pattaya;
+}
+li:nth-child(2) {
+  font-family:'Noto Sans KR';
+}
+li:nth-child(3) {
+  /* font-family:'Noto Sans KR', Pattaya; */
+  font-family:Pattaya, 'Noto Sans KR' sans-serif;
+}
+li:nth-child(4) {
+  /* font-family:'Noto Sans KR', Pattaya; */
+  font-family:'apple-SD-gothic', 'apple-gothic', 'myriad pro' ,arial, 'Noto Sans KR', '돋움', dotum, sans-serif;
+}
+
+li:nth-child(6) {
+  font-family:'KT&G SangsangBody M'
+}
+li {
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+li:nth-child(7) {
+  border-top-width:3px;
+  /* font-style:normal; */
+  font-style:italic;
+}
+li:nth-child(8) {
+  font-weight:700;
+}
+
+/* :root { font-size : 10px; } */
+
+li:nth-child(9) {
+  color:#077;
+  /* font-size:16px; */
+  /* font-size:200%; */
+  /* font-size:12pt; -> 인쇄용으로 사용하는 수치 */
+  /* font-size:2em; */
+  font-size:2rem;
+}
+li:nth-child(10) {
+  line-height:40px;
+  padding:0;
+}
+li:nth-child(11) {
+  padding:0; height:30px;
+  margin-bottom:150px;
+  line-height:30px;
+}
+li:nth-child(12) {
+  font-size:10px;
+  line-height:120%;
+}
+li:nth-child(13) {
+  /* font : style weight size / line-height font-family: */
+  font: normal 900 20px/120% Pattaya, 'Noto Sans KR', sans-serif;
+}
+li:nth-child(14) {
+  letter-spacing:0.5rem;
+}
+li:nth-child(15) {
+  word-spacing:-0.5rem;
+  text-transform: uppercase;
+}
+li:nth-child(16) {
+  text-transform: lowercase;
+}
+li:nth-child(17) {
+  width: 300px;
+  text-transform: capitalize;
+  text-align:right;
+}
+li:nth-child(18) {
+  width: 400px; height:auto;
+  text-align:justify;
+}
+li:nth-child(19) {
+  width: 200px;
+  white-space: nowrap;
+  overflow:hidden;
+  text-overflow:ellipsis;
+}
+li:nth-child(20) {
+  text-decoration: underline;
+  text-decoration-color: #c18;
+  text-decoration-style:wavy;
+}
+
+
+
+/* font
+  font-family :
+   - '사용할 서체명', '앞서체가 없다면 적용할 서체', '대체 서체', 최종 계통서체;
+  font-style : normal;
+  font-weight: 100 ~ 900;
+  font-size
+  line-height : 줄 사이 간격
+  ---------------------------
+  letter-spacing : 글자와 글자간 간격
+  word-spacing : 단어와 단어간 간격
+  text-transform
+  text-align : 텍스트정렬
+  ---------------------------
+  white-space : 의미없는 공백
+  text-overflow : 더보기 (...)
+  (overflow) : 지정영역에 넘치는 것
+  ---------------------------
+  text-decoration : 글자 꾸며주기
+  text-decoration-color : 꾸며주는 색깔
+  text-decoration-style : 꾸며주는 밑줄에 디자인
+
+  */
