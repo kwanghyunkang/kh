@@ -1,0 +1,98 @@
+/* css/src/basic_code_19_transform.css */
+
+.part {
+  width: 80%; max-width:1200px;
+  height:auto; min-height:1000px;
+  margin:auto;
+  background-color: #ddf; 
+}
+
+li {
+  float:left;
+  width: 300px; height:200px;
+  margin: 50px;
+  font-size:1.5rem; color:#fff;
+  background-color: #75f;
+}
+li > span {
+  display: block;
+  width: 100%; height: 100%;
+  padding:1rem;
+  border:2px solid #77a;
+  box-sizing: border-box;
+  background-color: rgba(255,0,255,0.5);
+  transition: all 200ms linear;
+}
+i {
+  display: block;
+  width: 100%; height:100%;
+  background-color: #fc5;
+}
+
+/* ------------------------------------- */
+
+.transform_01 > li:nth-child(1):hover > span {
+  transform: scale(1.3, 1.3);
+}
+.transform_01 > li:nth-child(2):hover > span {
+  transform: translate(100px, -100px);
+}
+.transform_01 > li:nth-child(3):hover > span {
+  transform: skew(50deg, -30deg);
+}
+.transform_01 > li:nth-child(3):hover > span i {
+  transform: skew(-50deg, 30deg);
+}
+.transform_01 > li:nth-child(4):hover > span {
+  transform: rotate(180deg);
+  /* rotate는 기본 z축으로 회전 */
+}
+.transform_01 > li:nth-child(5):hover > span {
+  transition:all 1000ms linear;
+  transform: perspective(300px) rotateY(360deg);
+}
+.transform_01 > li:nth-child(6):hover > span {
+  transform:rotate(180deg) translate(150px, 150px) scale(0.5);
+}
+.transform_01 > li:nth-child(7):hover > span {
+  transform:translate(150px, 150px) scale(0.5) rotate(180deg);
+}
+.transform_01 > li:nth-child(8):hover > span {
+  transform:perspective(500px) rotateY(180deg);
+  -webkit-backface-visibility:hidden;
+  -moz-backface-visibility:hidden;
+  -ms-backface-visibility:hidden;
+  -o-backface-visibility:hidden;
+  backface-visibility:hidden;
+}
+
+.transform_01 > li:nth-child(9) { position:relative; }
+.transform_01 > li:nth-child(9):hover .front { transform:rotateY(180deg); }
+.transform_01 > li:nth-child(9):hover .back { transform:rotateY(0); }
+
+/* 정면,뒷면 중복 내용 */
+.transform_01 > li:nth-child(9) span {
+  position:absolute; top:0; left:0;
+  width: 100%; height: 100%;
+  visibility:visible;
+  backface-visibility:hidden;
+}
+/* 정면에 보이는 카드 */
+.transform_01 > li:nth-child(9) .front {
+  background-color: #05f;
+}
+
+/* 뒷면에 보이는 카드 */
+.transform_01 > li:nth-child(9) .back {
+  background-color: #fda;
+  color:#171717;
+  transform: rotateY(180deg);
+}
+
+
+/* transform
+  * 형태를 변형하게 하는 기능으로 반드시 block 처리 되어야 한다.
+  * x, y, z 3개의 축을 사용.
+  * scale(크기), translate(이동), skew(뒤틀기), rotate(회전), perspective(원근법)
+
+*/
