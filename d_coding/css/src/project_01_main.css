@@ -40,7 +40,7 @@
 }
 #recommendbox {
   position:absolute;
-  float:left;
+  /* float:left; */
   width:420px; height:510px;
   box-sizing: border-box;
   background-color: #bf5;
