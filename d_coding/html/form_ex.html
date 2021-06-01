@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<!-- html/form_ex.html -->
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--[if IE]> 
+    <script src="../ie/html5shiv/dist/html5shiv.min.js"></script>
+    <sccipt src="../ie/ie9js/ie9.min.js"></script>
+    <script src="../ie/csspie/PIE.js"></script>
+    <script src="../ie/responsive.min.js"></script>
+    <![endif]-->
+  <link rel="shortcut icon" href="favicon.png" type="image/png"> 
+  <link rel="apple-touch-icon" href="favicon.png">
+
+  <link rel="perconnect" href="http://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../fonts/fontawesome5/css/all.min.css">
+
+  <link rel="stylesheet" href="../css/base/reset.css">
+  <link rel="stylesheet" href="../css/base/common.css">
+  <link rel="stylesheet" href="../css/src/form_ex.css">
+
+  <title>웹 기초</title>
+
+</head>
+<body>
+  <!-- layout -->
+  <div id="#wrap">
+    <h1><a href="./all_contents.html">웹기초</a></h1>
+    <hr />
+    
+    <div class="part1">
+      <div class="bg">
+        <div>
+          <p>Don't you have account?</p>
+          <lable for="location"></lable>
+          <input type="button" id="location" name="location" value="Sign up"/>
+        </div>
+        <p>WELCOME</p>
+      </div>
+
+    <form action="#" method="POST">
+
+      <fieldset class="part2">
+        <legend class="blind">welcome</legend>
+        <label for="userName"></label>
+        <input type="text" id="userName" name="userName" placeholder="Username" value="" />
+        <br />
+        <lable for="userPW"></lable>
+        <input type="text" id="userPW" name="userPW" placeholder="Password" value="" />
+        <br />
+        <lable for="location"></lable>
+        <input type="button" id="location" name="location" value="LOGIN"/>
+        <br />
+        <button type="pw">Forgot your Password?</button>
+      </fieldset>
+
+    </form>
+    </div>
+  </div>
+  <!-- script -->
+  <!-- <script src="../js/src/form_ex.js"></script> -->
+</body>
+</html>
