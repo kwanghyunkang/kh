@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<!-- html/layout_007_form_result.html -->
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--[if IE]> 
+    <script src="../ie/html5shiv/dist/html5shiv.min.js"></script>
+    <sccipt src="../ie/ie9js/ie9.min.js"></script>
+    <script src="../ie/csspie/PIE.js"></script>
+    <script src="../ie/responsive.min.js"></script>
+    <![endif]-->
+  <link rel="shortcut icon" href="favicon.png" type="image/png"> 
+  <link rel="apple-touch-icon" href="favicon.png">
+
+  <link rel="perconnect" href="http://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../fonts/fontawesome5/css/all.min.css">
+
+
+  <link rel="stylesheet" href="../css/base/reset.css">
+  <link rel="stylesheet" href="../css/base/common.css">
+  <link rel="stylesheet" href="../css/src/layout_007_form_result.css">
+
+  <title>웹 기초</title>
+
+</head>
+<body>
+  <!-- layout -->
+
+  <!-- wrap ===================================== -->
+  <div id="#wrap">
+    <h1><a href="./all_contents.html">
+      <span class="blind">웹기초</span>
+    </a></h1>
+
+  <!-- joinBox ================================== -->
+    <article id="joinBox">
+      <h2>회원가입</h2>
+      <div class="input_data_area">
+        <form action="" method="POST">
+          <fieldset>
+            <legend>개인정보 입력</legend>
+            <ul class="input_part">
+              <li>
+                <label for="userEmail">
+                  <i class="far fa-envelope"></i>
+                  <span class="blind">
+                    사용자의 이메일 입력
+                  </span>
+                </label>
+                <input type="" id="userEmail" name="userEmail" value="" required placeholder="이메일" />
+                <div class="check"></div>
+              </li>
+
+              <li>
+                <label for="userName">
+                  <i class="far fa-user"></i>
+                  <span class="blind">
+                    사용자의 이름 입력
+                  </span>
+                </label>
+                <input type="text" id="userName" name="userName" value="" required placeholder="이름" />
+                <div class="check"></div>
+              </li>
+
+              <li>
+                <label for="userPW">
+                  <i class="fas fa-shield-alt"></i>
+                  <span class="blind">
+                    비밀번호 입력
+                  </span>
+                </label>
+                <input type="password" id="userPW" name="userPW" value="" required placeholder="비밀번호" />
+                <div class="check"></div>
+              </li>
+
+              <li>
+                <label for="userPW_check">
+                  <i class="fas fa-shield-virus"></i>
+                  <span class="blind">
+                    비밀번호 다시 한번 확인
+                  </span>
+                </label>
+                <input type="password" id="userPW_check" name="userPW_check" value="" required placeholder="비밀번호 확인" />
+                <div class="check"></div>
+              </li>
+
+            </ul>
+          </fieldset>
+
+          <fieldset>
+            <legend>소속</legend>
+            <ul class="input_part">
+              <li>
+                <label for="userComp">
+                  <i class="far fa-building"></i>
+                  <span class="blind">
+                    소속 회사명을 입력
+                  </span>
+                </label>
+                <input type="" id="userComp" name="userComp" value="" required placeholder="소속 회사이름" />
+                <div class="check"></div>
+              </li>
+
+              <li class="country_list">
+                <label for="userCount">
+                  <i class="fas fa-globe"></i>
+                  <span class="blind">
+                    사용자의 나라 선택
+                  </span>
+                </label>
+                <div class="blind">
+                  <input type="text" id="userCount" name="userCount" value="" />
+                </div>
+                
+                <ul class="country">
+                  <li><button type="button" data-value="korea"><span class="flag ko"></span>대한민국</button></li>
+                  <li><button type="button" data-value="usa"><span class="flag us"></span>USA</button></li>
+                  <li><button type="button" data-value="germany"><span class="flag ge"></span>Germany</button></li>
+                  <li><button type="button" data-value="france"><span class="flag fr"></span>France</button></li>
+                </ul>
+
+                <!-- <select id="userCount" name="userCount">
+                  <option value="korea">대한민국</option>
+                  <option value="usa">USA</option>
+                  <option value="uk">UK</option>
+                  <option value="japan">Japan</option>
+                </select> -->
+                
+              </li>
+            </ul>
+          </fieldset>
+
+          <fieldset>
+            <legend>확인 및 가입</legend>
+            <p>아래 [동의하고 가입하기] 버튼을 클릭하면, <br />
+              <a href="#" class="join_guide_link">이용 약관</a> 및
+              <a href="#" class="join_guide_link">개인정보 취급방침</a> 에 동의하게 됩니다.
+            </p>
+            <div class="submit_btn">
+              <button type="submit">동의하고 가입하기</button>
+            </div>
+          </fieldset>
+        </form>
+      </div>
+    </article>
+
+  </div>
+
+  <!-- script -->
+  <!-- <script src="../js/src/layout_007_form_result.js"></script> -->
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<!-- html/layout_007_form_ex.html -->
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--[if IE]> 
+    <script src="../ie/html5shiv/dist/html5shiv.min.js"></script>
+    <sccipt src="../ie/ie9js/ie9.min.js"></script>
+    <script src="../ie/csspie/PIE.js"></script>
+    <script src="../ie/responsive.min.js"></script>
+    <![endif]-->
+  <link rel="shortcut icon" href="favicon.png" type="image/png"> 
+  <link rel="apple-touch-icon" href="favicon.png">
+
+  <link rel="perconnect" href="http://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../fonts/fontawesome5/css/all.min.css">
+
+  <link rel="stylesheet" href="../css/base/reset.css">
+  <link rel="stylesheet" href="../css/base/common.css">
+  <link rel="stylesheet" href="../css/src/layout_007_form_ex.css">
+
+  <title>웹 기초</title>
+
+</head>
+<body>
+  <!-- layout -->
+  <div id="#wrap">
+    <h1><a href="./all_contents.html">웹기초</a></h1>
+    <hr />
+
+    <!-- join_in_area ================================ -->
+    <div class="join_in_area">
+      <h2 class="blind">회원가입 페이지</h2>
+
+      <!-- join_part1 ================================== -->
+      <div class="join_part1">
+        <h3>회원가입</h3>
+        <p>logo</p>
+      </div>
+
+      <!-- join_part2 ================================== -->
+      <div class="join_part2">
+        <h3 class="blind">이메일</h3>
+        <form action="" method="POST">
+          <fieldset>
+            <legend class="blind">회원가입 작성</legend>
+
+            <div class="email_insert">
+              <lable for="userEmail"></lable>
+              <input type="text" id="userEmail" name="userEmail" placeholder="이메일" value="" />
+            </div>
+            <div class="name_insert">
+              <lable for="userName"></lable>
+              <input type="text" id="userName" name="userName" placeholder="이름" value="" />
+            </div>
+            <div class="pw_insert">
+              <lable for="userPW"></lable>
+              <input type="text" id="userPW" name="userPW" placeholder="비밀번호" value="" />
+            </div>
+            <div class="pw_check_insert">
+              <lable for="userPW"></lable>
+              <input type="text" id="userPW" name="userPW" placeholder="비밀번호 확인" value="" />
+            </div>
+            <div class="company_insert">
+              <lable for="companyName"></lable>
+              <input type="text" id="companyName" name="companyName" placeholder="회사 이름" value="" />
+            </div>
+            <div class="country_insert">
+              <lable for="countryName"></lable>
+              <select name="countryName" id="countryName">
+                <option>South Korea (대한민국)</option>
+                <option></option>
+              </select>
+            </div>
+
+
+          </fieldset>
+        </form>
+      </div>
+      
+      <!-- join_part3 ================================== -->
+      <div class="join_part3">
+        <h3 class="blind">동의 가입</h3>
+        <p>아래[동의하고 가입하기] 버튼을 클릭하면, <a href="#">이용 약관</a> 및 
+          <a href="#">개인 정보 취급 방침</a> 에 동의하게 됩니다.</p>
+        <div class="join_in_btn">
+          <button type="submit" class="submit_btn">동의하고 가입하기</button>
+        </div>
+      </div>
+      
+    </div>
+    
+  </div>
+  <!-- script -->
+  <!-- <script src="../js/src/layout_007_form_ex.js"></script> -->
+</body>
+</html>
+

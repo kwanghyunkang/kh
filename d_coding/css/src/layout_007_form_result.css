@@ -1,0 +1,170 @@
+/* css/src/layout_007_form_result.css */
+
+#wrap {
+  width:750px; height:auto; min-height:800px;
+  margin:auto;
+  padding:12px 30px 16px;
+  box-sizing:border-box;
+  background-color: #ddd;
+}
+
+h1 {
+  width: 100%; height:66px;
+  margin-bottom:15px;
+}
+
+h1 > a {
+  display: block; width: 280px; height:100%;
+  margin:auto;
+  background-image: url("../../img/icon/xidostudio_logo.svg");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+
+/* joinBox ============================= */
+#joinBox {
+  width: 685px; height: auto;
+  margin:auto;
+  background-color: #ddd;
+}
+
+#joinBox > h2 {
+  width: 100%; height: auto;
+  margin-bottom:40px;
+  text-align: center;
+}
+
+.input_data_area {
+  width: 100%; height: auto;
+}
+
+form {
+  width: 100%; height: auto;
+  min-height:500px;
+}
+fieldset {
+  width: 100%; height: auto;
+  min-height:200px;
+}
+fieldset:nth-of-type(2) {
+  margin-top:24px;
+  padding-top:24px;
+  padding-bottom:30px;
+  border-top:3px solid #e5e5e5;
+}
+
+/* input_part =========================== */
+.input_part {
+  width: 100%; height: auto;
+}
+.input_part > li {
+  width: 100%; height: 58px;
+  border:1px solid #e5e5e5;
+  box-sizing:border-box;
+  margin-bottom:12px;
+  background-color: #fff;
+}
+.input_part > li:last-child {
+  margin-bottom:0;
+}
+.input_part label {
+  float:left;
+  width: 56px; height: 100%;
+  border-right:1px solid #e5e5e5;
+  cursor:pointer;
+  /* background-color: #fa0; */
+  text-align:center;
+  font-size:2rem;
+  line-height:58px;
+  color:#757575;
+}
+
+.input_part input {
+  float:left;
+  width: 550px; height: 100%;
+  width:calc(100% - 9.375rem);
+  padding-left:10px;
+  color:#151515;
+}
+.input_part input::placeholder {
+  color:#757575;
+}
+.input_part .check {
+  float:right;
+  width: 60px; height: 100%;
+  background-color: #cca;
+}
+/* .input_part #userCount {
+  position:absolute;
+  z-index:-1; overflow:hidden;
+  width: 0; height: 0;
+} */
+
+/* country ===================================== */
+.country {
+  /* float:left; */
+  position:absolute; z-index:100;
+  top: 0; left: 50px;
+  width: 620px;
+  width:calc(100% - 60px);
+  height:auto;
+  background-color: #fff;
+}
+.country li {
+  width: 100%; height: 58px;
+  border-bottom:1px solid #333;
+}
+.country button {
+  width: 100%; height: 100%;
+  text-align:left;
+  text-indent:1rem;
+}
+.flag {
+  display: inline-block;
+  width: 38px; height: 24px;
+  margin-right:1rem;
+  /* background-color: #77f; */
+  background-image: url("../../img/icon/world_flag.png");
+  background-repeat: no-repeat;
+  background-size: 691.891892%;
+  background-position: inherit;
+}
+
+button[data-value="korea"] { background-position: -13px -98px; }
+button[data-value="usa"] { background-position: -77px -24px; }
+button[data-value="germany"] { background-position: -78px -98px; }
+button[data-value="france"] { background-position: -141px -24px; }
+
+.country_list {
+  position:relative;
+  overflow-y:hidden;
+}
+.country_list:hover {
+  overflow-y:visible;
+}
+
+
+
+/* fieldset 동의 ================================== */
+fieldset:last-of-type > p {
+  width: 100%; height: auto;
+  margin-bottom:35px;
+  font-size:18px;
+  font-size:1.125rem;
+}
+.join_guide_link {
+  line-height: 1.6;
+  color:#0079c8;
+  text-decoration:underline;
+}
+
+.submit_btn {
+  width: 100%; height:68px;
+}
+.submit_btn button {
+  width: 100%; height: 100%;
+  color:#fff;
+  font-size:22px; font-size:1.375rem;
+  font-weight: 700;
+  background-color: #0079c8;
+}
