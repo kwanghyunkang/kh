@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<!-- html/layout_008_form_ex.html -->
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--[if IE]> 
+    <script src="../ie/html5shiv/dist/html5shiv.min.js"></script>
+    <sccipt src="../ie/ie9js/ie9.min.js"></script>
+    <script src="../ie/csspie/PIE.js"></script>
+    <script src="../ie/responsive.min.js"></script>
+    <![endif]-->
+  <link rel="shortcut icon" href="favicon.png" type="image/png"> 
+  <link rel="apple-touch-icon" href="favicon.png">
+
+  <link rel="perconnect" href="http://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;500;700&display=swap" rel="stylesheet">
+  <!-- <link rel="stylesheet" href="../fonts/fontawesome5/css/all.min.css"> -->
+  <!-- font.google.com - material-icon -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+
+  <link rel="stylesheet" href="../css/base/reset.css">
+  <link rel="stylesheet" href="../css/base/common.css">
+  <link rel="stylesheet" href="../css/src/layout_008_form_ex.css">
+
+  <title>layout_008_form_ex</title>
+
+</head>
+<body>
+  <!-- layout -->
+
+  <!-- wrap ======================================== -->
+  <div id="wrap">
+    <h1>
+      <a href="./all_contents.html">
+        <span class="blind">웹기초</span>
+      </a>
+    </h1>
+
+    <!-- joinBox =================================== -->
+    <article id="joinBox">
+      <h2 class="blind">회원가입</h2>
+      <div class="input_data_area">
+        <form action="" method="POST">
+          <fieldset>
+            <legend>개인정보 입력</legend>
+              <!-- input_part ====================== -->
+              <ul class="input_part">
+                <li>
+                  <label for="userID"> 아이디
+                    <span class="blind">
+                      사용자 ID 입력
+                    </span>
+                  </label>
+                  <input type="text" id="userID" name="userID" value="" required />
+                </li>
+
+                <li>
+                  <label for="userPW"> 비밀번호
+                    <span class="blind">
+                      사용자 PW 입력
+                    </span>
+                  </label>
+                  <input type="text" id="userPW" name="userPW" value="" required />
+                </li>
+
+                <li>
+                  <label for="userPW"> 비밀번호 재확인
+                    <span class="blind">
+                      사용자 PW 재입력
+                    </span>
+                  </label>
+                  <input type="text" id="userPW" name="userPW" value="" required />
+                </li>
+
+                <li>
+                  <label for="userName"> 이름
+                    <span class="blind">
+                      사용자 이름 입력
+                    </span>
+                  </label>
+                  <input type="text" id="userName" name="userName" value="" required />
+                </li>
+
+                <li>
+                  <label for="userBirth"> 생년월일
+                    <span class="blind">
+                      사용자 생년월일 입력
+                    </span>
+                  </label>
+                  <input type="text" id="userName" name="userName" value="" required />
+                </li>
+
+                <li>
+                  <label for="user"> 성별
+                    <span class="blind">
+                      사용자 성별 입력
+                    </span>
+                  </label>
+                  <input type="button" id="userName" name="userName" value="" required />
+                </li>
+
+                <li>
+                  <label for="userEmail"> 본인 확인 이메일(선택)
+                    <span class="blind">
+                      사용자 이메일 입력
+                    </span>
+                  </label>
+                  <input type="text" id="userEmail" name="userEmail" value="" required />
+                </li>
+
+                <li>
+                  <label for="userPhone"> 휴대전화
+                    <span class="blind">
+                      사용자 휴대전화 입력
+                    </span>
+                  </label>
+                  <input type="text" id="userPhone" name="userPhone" value="" required />
+                </li> 
+
+              </ul>     
+          </fieldset>
+        </form>
+
+
+        <fieldset class="joinPart">
+          <legend>가입하기</legend>
+          <div class="submit_btn">
+            <button type="submit">가입하기</button>
+          </div>
+        </fieldset>
+
+      </div>
+
+    </article>
+
+  </div>
+
+
+  <!-- script -->
+  <!-- <script src="../js/src/layout_008_form_ex.js"></script> -->
+</body>
+</html>
