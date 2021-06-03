@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<!-- html/layout_008_form_result.html -->
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--[if IE]> 
+    <script src="../ie/html5shiv/dist/html5shiv.min.js"></script>
+    <sccipt src="../ie/ie9js/ie9.min.js"></script>
+    <script src="../ie/csspie/PIE.js"></script>
+    <script src="../ie/responsive.min.js"></script>
+    <![endif]-->
+  <link rel="shortcut icon" href="favicon.png" type="image/png"> 
+  <link rel="apple-touch-icon" href="favicon.png">
+
+  <link rel="perconnect" href="http://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../fonts/fontawesome5/css/all.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <link rel="stylesheet" href="../css/base/reset.css">
+  <link rel="stylesheet" href="../css/base/common.css">
+  <link rel="stylesheet" href="../css/src/layout_008_form_result.css">
+
+  <title>layout_008_form_result</title>
+
+</head>
+<body>
+  <!-- layout =============================================================================== -->
+  <div id="wrap">
+    <h1 class="blind_wrap">
+      <a href="./all_contents.html">
+      <span>웹표준</span>
+      </a>
+    </h1>
+
+    <article id="joinBox">
+      <h2 class="blind">회원가입</h2>
+
+      <form action="" method="POST">
+
+        <fieldset>
+          <legend>계정생성</legend>
+
+          <!-- 아이디 ===================================== -->
+          <dl class="insert_data">
+            <dt><label for="userID">아이디</label></dt>
+            <dd>
+              <input type="text" id="userID" name="userID" value="" title="아이디 입력" required />
+              <span class="side_text">@naver.com</span>
+            </dd>
+            <dd class="none result">
+              <span>생성할 아이디명을 숫자 및 영문 조합하여 3글자 이상 생성하세요.</span>
+              <span>다시 입력하세요.</span>
+              <span>생성 가능한 아이디입니다.</span>
+            </dd>
+          </dl>
+
+          <!-- 비밀번호 ===================================== -->
+          <dl class="insert_data">
+            <dt><label for="userPw">비밀번호</label></dt>
+            <dd>
+              <input type="password" id="userPw" name="userPw" value="" title="비밀번호 입력" required />
+              <span class="side_text">
+                <i class="material-icons-outlined">lock</i>
+              </span>
+            </dd>
+            <dd class="none result">
+              <span>비밀번호를 영문과 숫자 조합 10자이상으로 생성하세요.</span>
+              <span>올바르게 작성되었습니다.</span>
+            </dd>
+          </dl>
+
+          <!-- 비밀번호 확인 ===================================== -->
+          <dl class="insert_data">
+            <dt><label for="userPwRe">비밀번호 재확인</label></dt>
+            <dd>
+              <input type="password" id="userPwRe" name="userPwRe" value="" title="비밀번호 재확인" required />
+              <span class="side_text">
+                <i class="material-icons-outlined">enhanced_encryption</i>
+              </span>
+            </dd>
+            <dd class="none result">
+              <span>비밀번호가 동일하지 않습니다. 다시 입력해주세요.</span>
+              <span>올바르게 작성되었습니다.</span>
+            </dd>
+          </dl>
+
+        </fieldset>
+
+        
+        <fieldset>
+          <legend>개인정보</legend>
+
+          <!-- 이름 ==================================== -->
+          <dl class="insert_data">
+            <dt><label for="userName">이름</label></dt>
+            <dd>
+              <input type="text" id="userName" name="userName" value="" title="이름 작성" required />
+              <span class="side_text">
+                <i class="material-icons-outlined">enhanced_encryption</i>
+              </span>
+            </dd>
+            <dd class="none result">
+              <span>다시 입력하세요.</span>
+              <span>확인되었습니다.</span>
+            </dd>
+          </dl>
+
+          <!-- 생년월일 ================================ -->
+          <dl class="insert_data birthday">
+            <dt>
+              <label for="userFirstyear">생년월일
+              <span class="blind">을 모두 입력하세요. 태어난 해를 4자리 숫자로 작성하세요.</span>
+            </label>
+            </dt>
+
+            <dd>
+              <ul class="clearfix">
+                <li>
+                  <input type="tel" id="userFirstyear" name="userFirstyear" value="" placeholder=" 년(4자)"
+                  title="태어난해" maxlength="4" required class="birth_day" />
+                </li>
+
+                <li>
+                  <label for="userFirstmonth"><span class="blind">태어난 달을 입력하세요.</span></label>
+                  <select name="userFirstmonth" id="userFirstmonth" title="월" required class="birth_day" >
+                  <option>선택</option>
+                  <option value="01">1월</option>
+                  <option value="02">2월</option>
+                  <option value="03">3월</option>
+                  <option value="04">4월</option>
+                  <option value="05">5월</option>
+                  <option value="06">6월</option>
+                  <option value="07">7월</option>
+                  <option value="08">8월</option>
+                  <option value="09">9월</option>
+                  <option value="10">10월</option>
+                  <option value="11">11월</option>
+                  <option value="12">12월</option>
+                  </select>
+                </li>
+
+                <li>
+                  <label for="userFirstday"><span class="blind">태어난 날짜를 숫자로 입력하세요.</span></label>
+                  <input type="tel" id="userFirstday" name="userFirstday" value="" placeholder=" 일"
+                  title="날짜" maxlength="2" required class="birth_day" />
+                </li>
+              </ul>
+              
+            </dd>
+
+            <dd class="none result">
+              <span>생년월일을 숫자로 정확하게 입력하세요.</span>
+              <span>올바르게 작성되었습니다.</span>
+            </dd>
+          </dl>
+
+
+        </fieldset>
+
+        <fieldset>
+          <legend>인증체크</legend>
+          
+        </fieldset>
+      
+        <fieldset class="joinPart">
+          <legend class="blind">확인 및 전송</legend>
+          <div class="submit_btn">
+            <button type="submit">가입하기</button>
+          </div>
+        </fieldset>
+        
+      </form>
+    </article>
+
+
+    <footer id="footBox">
+      <h2 class="blind">naver info</h2>
+
+
+
+      <ul class="info_navigation">
+        <li><a href="#">이용약관</a></li>
+        <li><a href="#">개인정보처리방침</a></li>
+        <li><a href="#">책임의 한계와 법적 고지</a></li>
+        <li><a href="#">회원정보 고객센터</a></li>
+      </ul>
+
+      <address>
+        <p>
+          <span class="naver_icon"></span>
+          copyright <em><span class="upper">naver</span> Corp.</em> all rights reserved.
+        </p>
+      </address>
+
+
+    </footer>
+
+
+  </div>
+
+
+
+
+
+  <!-- script -->
+  <!-- <script src="../js/src/layout_008_form_result.js"></script> -->
+</body>
+</html>

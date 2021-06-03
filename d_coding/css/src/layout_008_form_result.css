@@ -1,0 +1,241 @@
+/* css/src/layout_008_form_result.css */
+
+:root {
+  /* color */
+  --color-green1:#08a600;
+  --color-green2:#03c75a;
+  --color-green3-op:#03c75b36;
+  --color-red:   #f00;
+  --color-black: #151515;
+  --color-gray1: #8e8e8e;
+  --color-gray2: #f5f6f7;
+  --color-white: #fff;
+  
+  /* font */
+  --font-size1:20px;
+  --font-size2:18px;
+  --font-size3:16px;
+  --font-size4:14px;
+  
+  /* line */
+  --line-gray1:solid 1px #dadada;
+  
+  }
+  /*  ========================================= */
+  /*  1. 직접선택해서 font-family 적용
+      2. 공통의 class이름을 만들어서 적용 (다른 font icon방식과 동일)
+      3. 속성이 동일한 이름으로 시작하는 요소에 적용  ( ^ : 시작, $ : 끝, * : 모든 )
+  */
+  
+  /* .material { font-family : 'Material_icons' ;} */
+  [class^="material"] { font-family : 'Material Icons' ; }
+  
+  input[type="text"]:focus,
+  input[type="password"]:focus,
+  input[type="tel"]:focus,
+  select:focus {
+    background-color: rgba(50,255,50,0.2);
+    background-color: var(--color-green3-op);
+    border-bottom:1px solid var(--color-green2)
+  }
+/* ============================= */
+body {
+  background-color: var(--color-gray2);
+}
+
+/* wrap ========================== */
+#wrap {
+  width: 28.75rem; height: auto; min-height: 50rem;
+  margin:auto; padding-top:3.625rem;
+  /* background-color: #afd; */
+}
+h1 {
+  width:16.25rem; height:3rem;
+  margin:auto; margin-bottom:2.25rem;
+}
+h1 > a {
+  background-image: url("../../img/icon/naver_logo.svg");
+}
+
+/* joinBox ========================= */
+#joinBox {
+  width: 100%; height: auto; min-height:43.75rem;
+  margin-bottom:2.5rem;
+}
+
+form { width: 100%; height: auto; }
+
+fieldset { 
+  width: 100%; height: auto; min-height:50px;
+  margin-bottom:40px;
+  /* background-color: #aaa; */
+}
+fieldset:last-of-type {
+  margin-bottom:0;
+}
+nth
+/* insert_data =============================== */
+.insert_data {
+  width: 100%; height: auto;
+  margin-bottom:20px;
+}
+.insert_data:last-of-type { margin-bottom:0; }
+
+.insert_data dt {
+  width: 100%; height: auto;
+  margin-bottom:10px;
+  font-size:var(--font-size2);
+  font-weight:700;
+  color:var(--color-black);
+}
+.insert_data dt label {
+  font-size:inherit;
+  font-weight: inherit;
+  color: inherit;
+}
+/* nth type 동일한 요소 이름
+nth child 동일조건 연속되어진 */
+
+.insert_data dd:nth-of-type(1) {
+  position:relative; z-index:100;
+  width: 100%; height: 50px;
+  border:var(--line-gray1);
+  padding:0.7rem;
+  box-sizing:border-box;
+  background-color: var(--color-white);
+}
+.insert_data input[type="text"] {
+  display: block;
+  width: 100%; height: 100%;
+  background-color: rgba(255,255,255,0.3);
+}
+#userID {
+  padding-right: 7rem;
+  box-sizing: border-box;
+}
+
+.side_text {
+  display: block;
+  position:absolute; z-index:-1;
+  top:50%; right:1rem;
+  transform:translateY(-50%);
+}
+
+.birthday dd:nth-of-type(1) {
+  padding:0; border:0;
+  background-color: transparent;
+}
+.birthday dd > ul {
+  width: 100%; height: auto;
+}
+.birthday li {
+  float:left; box-sizing: border-box;
+  width: 30%; height: 100%;
+  margin-right:5%;
+  border:var(--line-gray1);
+  padding:0.3rem;
+  background-color: #fff;
+}
+.birthday li:last-child {
+  margin-right:0;
+}
+
+.birthday .birth_day {
+  float:left;
+  width: 100%; height: 100%;
+  margin-right:5%;
+  /* background-color: #afc; */
+}
+.birthday .birth_day:last-child {
+  margin-right:0;
+}
+
+
+/* ================================= */
+.none { display:none; }
+.none span { display:none; }
+
+.result.success { display:block; }
+.result.success > span:nth-of-type(3) { display:inline; color:#03c75a;}
+
+.result.error { display:block; }
+.result.error > span:nth-of-type(2) { display:inline; color:#f00;}
+
+
+/* footBox ========================= */
+#footBox {
+  position:relative;
+  width: 100%; height:auto; min-height: 1.25rem;
+  text-align:center;
+}
+.joinPart {
+  width: 100%; height: 100px;
+  margin:auto;
+}
+.submit_btn {
+  width: 100%; height:60px;
+}
+.submit_btn button {
+  /* position: absolute; */
+  width: 100%; height: 100%;
+  color:#fff;
+  /* margin:auto; */
+  margin-bottom:50px;
+  font-size:22px; font-size:1.375rem;
+  font-weight: 600;
+  background-color: #03c75a;
+}
+
+.info_navigation {
+  width: 100%; height: auto;
+  margin-bottom:1.5rem;
+  padding-bottom:0.3rem;
+  border-bottom:var(--line-gray1);
+}
+.info_navigation li {
+  position:relative;
+  /* float:left; */
+  display:inline-block;
+  margin-right:9px;
+  font-size:var(--font-size4);
+  /* background-color:#fc7; */
+}
+.info_navigation li:last-child {
+  margin-right:0;
+}
+
+.info_navigation li:after ,
+.info_navigation li::after {
+  content:""; display: block;
+  position:absolute; top:50%; right:-5px;
+  width: 1px; height: 60%; transform:translateY(-50%);
+  background-color: var(--color-gray1);
+}
+.info_navigation li:last-child:after,
+.info_navigation li:last-child::after {
+  display:none;
+}
+
+
+
+/* ================= */
+#footBox address {
+  width: 100%; height: auto;
+  font-style:normal;
+  text-transform: capitalize;
+}
+#footBox p {
+  width: 100%; height: auto;
+
+}
+.naver_icon {
+  display:inline-block;
+  width: 100px; height:20px;
+  margin-right:1rem;
+  background-image: url("../../img/icon/naver_logo.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 100% 50%;
+}
+#footBox address em { font-style:normal; font-weight:700; }
+.upper { text-transform: uppercase;}
