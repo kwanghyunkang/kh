@@ -1,5 +1,7 @@
 @charset "UTF-8";
-/* reset.css */
+/* css/base/reset.css */
+
+/* s, strike, big = 사라진 태그 */
 
 :root {
   font-size:16px;
@@ -13,7 +15,7 @@ html, body {
   font-family:'Noto Sans KR', sans-serif; 
   color:#171717;
   color:var(--color-black);
-  line-height:120%;
+  line-height:1;
   background-color: #fff;
   background-color: var(--color-white);
 }
@@ -29,6 +31,8 @@ form,fieldset,legend,input,label,video,audio,textarea,select {
 }
 
 ul,ol,li { list-style:none; }
+
+i, b, u { font-weight:400; font-style:normal; text-decoration: none; }
 
 a { 
   color: inherit;
