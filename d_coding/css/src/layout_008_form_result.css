@@ -73,7 +73,7 @@ fieldset {
 fieldset:last-of-type {
   margin-bottom:0;
 }
-nth
+
 /* insert_data =============================== */
 .insert_data {
   width: 100%; height: auto;
