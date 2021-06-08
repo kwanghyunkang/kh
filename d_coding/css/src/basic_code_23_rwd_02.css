@@ -1,0 +1,14 @@
+/* css/src/basic_code_23_rwd_02.css */
+
+
+/* 공통범위 디자인 */
+@import url("../rwd_02/a_basic_layout.css");
+/* 스마트폰 v 디자인 ( ~479px )*/
+@import url("../rwd_02/b_smartphone_v.css");
+/* 스마트폰 h 디자인 ( 480~767px )*/
+@import url("../rwd_02/c_smartphone_h.css");
+/* 태블릿 ( 768~959px ) */
+@import url("../rwd_02/d_tablet.css");
+/* pc ( 960px~ ) */
+@import url("../rwd_02/e_pc.css");
+

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- html/basic_code_23_rwd_01.html -->
+<!-- html/basic_code_23_rwd_02.html -->
 <html lang="ko-KR">
 <head>
   <meta charset="UTF-8">
@@ -24,7 +24,7 @@
 
   <link rel="stylesheet" href="../css/base/reset.css">
   <link rel="stylesheet" href="../css/base/common.css">
-  <link rel="stylesheet" href="../css/src/basic_code_23_rwd_01.css">
+  <link rel="stylesheet" href="../css/src/basic_code_23_rwd_02.css">
 
   <title>웹기초</title>
 
@@ -32,19 +32,57 @@
 <body>
   <!-- layout -->
     <div id="wrap">
-      
-      <header id="headBox"></header>
-      <section id="viewBox"></section>
-      <article id="contentBox"></article>
-      <article id="infoBox"></article>
-      <footer id="footBox"></footer>
+      <header id="headBox">
+        <div class="headBox_innerwrap container clearfix">
+          <h1><a href="./all_contents.html">site name</a></h1>
+          <nav id="navBox">
+            <h2 class="blind">navigation</h2>
+            <div class="search_area"></div>
+            <div class="gnb_area"></div>
+          </nav>
+        </div>
+      </header>
+
+      <section id="viewBox">
+        <h2 class="blind">광고영역</h2>
+        <div class="viewBox_innerwrap container">
+          <div class="indicator"></div>
+  
+          <div class="view_area">
+            <div class="view_guide">
+              <ul class="view_inner">
+                <li>광고 01</li>
+                <li>광고 02</li>
+                <li>광고 03</li>
+                <li>광고 04</li>
+                <li>광고 05</li>
+                <li>광고 06</li>
+                <li>광고 07</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <article id="contentBox">
+        <div class="title_shape"></div>
+      </article>
+      <article id="infoBox" class="clearfix">
+        <div class="new_area info_table_area info_pc_area"></div>
+        <div class="notice_area info_table_area info_pc_area"></div>
+        <div class="more_content info_pc_area"></div>
+      </articl>
+
+      <footer id="footBox">
+        <div class="footBox_innerwrap container clearfix"></div>
+      </footer>
 
     </div>
 
 
 
   <!-- script -->
-  <script src="../js/src/basic_code_23_rwd_01.js"></script>
+  <script src="../js/src/basic_code_23_rwd_02.js"></script>
   
 </body>
 </html>
