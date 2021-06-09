@@ -12,3 +12,5 @@
 /* pc ( 960px~ ) */
 @import url("../rwd_02/e_pc.css");
 
+/* table,pc 통합영역 768px~ */
+@import url("../rwd_02/tablet_pc.css")

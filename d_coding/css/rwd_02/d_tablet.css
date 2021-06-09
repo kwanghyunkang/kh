@@ -42,7 +42,7 @@
     padding-top:60px; padding-top:3.75rem;
     background-color: #bbaa77;
   }
-  .indicator { display:none; }
+  .viewBox_innerwrap { height:100%; }
 
   .view_area { 
     width:100%; height: 100%;
@@ -55,17 +55,16 @@
     border:1px solid #333;
     box-sizing:border-box;
     overflow-x:auto;
+    /* overflow:hidden; */
   }
   .view_inner {
-    position:relative;
     width: 100%;
     height: 100%;
   }
   .view_inner > li {
-    position: absolute; top:0; left:0;
-    /* float: left; */
+    float: left;
     width: 100%;
-    /* width:calc(100% / 7); */
+    width:calc(100% / 7);
     height: 100%;
   }
   .view_inner > li:nth-child(1) {background-color: rgb(43,88,188);}
@@ -79,17 +78,10 @@
 
 
 
-  /* contentBox ========================== */
-  #contentBox {
-    width:100%; height:210px;
-    padding:24px 16px; padding:1.5rem 1rem; box-sizing: border-box;
-    background-color: #547d77;
-  }
-  .title_shape {
-    width: 192px; height: 156px;
-    width:12rem; height:9.75rem;
-    background-color: #33b88f;
-  }
+  /* contentBox : 공통영역에 통합처리 ========================== */
+
+  
+  /* infoBox ============================== */
   #infoBox {
     width:100%; height:auto;
     background-color: #33b88f;
