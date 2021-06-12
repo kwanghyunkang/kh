@@ -1,0 +1,82 @@
+/* pc  : 1600~ */
+/* css/resto/f_pc.css */
+
+@media screen and (min-width:1600px) {
+  /* design 기준 : 1600px */
+
+  /* #wrap ===================================== */
+  #wrap {
+    --headHeight:6.25rem;
+  }
+  
+  /* #headBox ===================================== */
+  /* #headBox {} */
+  #headBox > .container {
+    width: 100%; height: 100%;
+    max-width:1260px; max-width:78.75rem;
+    margin:auto;
+    padding-top:20px; padding-top:1.25rem;
+  }
+  h1 {
+    width: 128px; height: 80px;
+    width: 8rem; height: 5rem;
+  }
+
+  /* #navBox ===================================== */
+  #navBox {
+    width:142px; height:40px;
+    width:8.875rem; height:2.5rem;
+    margin-top:20px;
+  }
+  .nav_area {
+    display:block;
+    width: 100%; height: 100%;
+  }
+  .global_nav {
+    position:absolute; left:0; right:0; top:40;
+    width: 940px; height: 40px;
+    width: 58.75rem; height:2.5rem;
+    margin:auto;
+    background-color: var(--color-gray1);
+  }
+  .social_net {
+    width: 100%; height: 100%;
+    background-color: var(--color-primary);
+  }
+  
+  /* #viewBox ===================================== */
+  #viewBox {
+    height:57.5rem;
+  }
+  /* #discoverBox ===================================== */
+  #discoverBox {
+    height:90.75rem;
+  }
+  /* #guideBox ===================================== */
+  #guideBox {
+    height:49.375rem;
+  }
+  /* #eventBox ===================================== */
+  #eventBox {
+    height:45.25rem;
+  }
+  /* #galleryBox ===================================== */
+  #galleryBox {
+    position:relative; z-index:100;
+    height: auto; min-height:98.125rem;
+  }
+  /* #chefBox ===================================== */
+  #chefBox {
+    height:40.625rem;
+    margin-top:-3.75rem;
+  }
+  /* #locationBox ===================================== */
+  #locationBox {
+    height:40rem;
+  }
+  /* #restoinfoBox ===================================== */
+  #restoinfoBox {
+    height:23.75rem;
+  }
+
+} /* @media screen 1600~ */
