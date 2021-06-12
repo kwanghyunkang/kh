@@ -1,0 +1,20 @@
+/* css/src/layout_009_rwd_resto.css */
+
+
+/* ================================================ */
+/* 변수 설정 */
+@import url("../resto/variable.css");
+/* 공통변수  1280기준 - 구형브라우저 포함 */
+@import url("../resto/a_basic_layout.css");
+/* phone_v : ~479 */
+@import url("../resto/b_phone_v.css");
+/* phone_h : 480 ~ 767 */
+@import url("../resto/c_phone_h.css");
+/* tablet  : 768 ~ 1279 */
+@import url("../resto/d_tablet.css");
+/* laptop  : 1280 ~ 1599 */
+@import url("../resto/e_laptop.css");
+/* pc      : 1600~ */
+@import url("../resto/f_pc.css");
+/* ================================================ */
+

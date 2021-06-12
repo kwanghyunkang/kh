@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<!-- html/layout_009_rwd_resto.html -->
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--[if IE]> 
+    <script src="../ie/html5shiv/dist/html5shiv.min.js"></script>
+    <sccipt src="../ie/ie9js/ie9.min.js"></script>
+    <script src="../ie/csspie/PIE.js"></script>
+    <script src="../ie/responsive.min.js"></script>
+    <![endif]-->
+  <link rel="shortcut icon" href="favicon.png" type="image/png"> 
+  <link rel="apple-touch-icon" href="favicon.png">
+
+  <link rel="perconnect" href="http://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../fonts/fontawesome5/css/all.min.css">
+
+  <link rel="stylesheet" href="../css/base/reset.css">
+  <link rel="stylesheet" href="../css/base/common.css">
+  <link rel="stylesheet" href="../css/src/layout_009_rwd_resto.css">
+
+  <title>웹 기초</title>
+
+</head>
+<body>
+  <!-- layout -->
+  <div id="wrap">
+
+    <!-- headBox ============================== -->
+    <header id="headBox">
+      <div class="container blind_wrap">
+        <h1><a href="#"><span>resto</span></a></h1>
+        <nav id="navBox">
+          <h2 class="blind">resto navigation</h2>
+          <!-- 
+            .nav_open_btn>button[type="button"]>span.blind{메뉴}
+            .nav_area>.nav_close_btn{닫기}+.global_nav{전체메뉴}+.social_net{sns} 
+          -->
+          <div class="nav_area none">
+            <div class="global_nav">전체메뉴</div>
+            <div class="social_net">sns</div>
+          </div>
+        </nav>
+      </div>
+    </header>
+  
+    <!-- viewBox ============================== -->
+    <section id="viewBox">
+      <h2 class="blind">site 광고영역</h2>
+
+      <div class="indicator none">
+        <ul>
+          <li><a href="#resto_view_01">resto_guide</a></li>
+          <li><a href="#resto_view_02">resto_event</a></li>
+          <li><a href="#resto_view_03">resto_special</a></li>
+        </ul>
+      </div>
+      <div class="view_area">
+        <ul>
+          <li>
+            <dl id="resto_view_01">
+              <dt>resto_guide</dt>
+              <dd>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
+                Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
+                Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
+              </dd>
+              <dd><a href="#"><span class="blind">guide</span>
+              바로가기</a></dd>
+            </dl>
+          </li>
+
+          <li>
+            <dl id="resto_view_02">
+              <dt>resto_event</dt>
+              <dd>Lorem ipsum</dd>
+              <dd><a href="#"><span class="blind">event</span>
+              바로가기</a></dd>
+            </dl>
+          </li>
+
+          <li>
+            <dl id="resto_view_03">
+              <dt>resto_special</dt>
+              <dd>Lorem ipsum</dd>
+              <dd><a href="#"><span class="blind">special</span>
+              바로가기</a></dd>
+            </dl>
+          </li> 
+        </ul>
+      </div>
+        <!-- the_resto_guide
+        resto_event
+        resto_special -->
+        
+    </section>
+
+    <!-- discoverBox ========================== -->
+    <article id="discoverBox">
+      <h2 class="blind">매장 소개 및 서비스안내</h2>
+      <div class="our_store">
+        <h3 class="blind">매장안내</h3>
+        <div class="store_btn"></div>
+        <div class="store_area">
+          <ul>
+            <li class="act"><div class="front">store card 01</div></li>
+            <li><div class="front">store card 02</div></li>
+            <li><div class="front">store card 03</div></li>
+          </ul> 
+        </div>
+      </div>
+      <div class="our_service">
+        <h3 class="blind">매장서비스 소개</h3>
+      </div>
+    </article>
+
+    <!-- guideBox ============================= -->
+    <article id="guideBox">
+      <h2 class="blind">오픈 및 예약</h2>
+      <div class="guide_area">
+        <div class="open_guide">
+          <h3 class="blind">open</h3>
+        </div>
+        <div class="booking_guide">
+          <h3 class="blind">booking guide</h3>
+        </div>
+      </div>
+    </article>
+
+    <!-- eventBox ============================= -->
+    <article id="eventBox">
+      <h2 class="blind">our event</h2>
+      <div class="event_area">
+        <!-- 이벤트 내용 담기 -->
+      </div>
+    </article>
+
+    <!-- galleryBox =========================== -->
+    <section id="galleryBox">
+      <h2 class="blind">gallery</h2>
+      <div class="gallery_area">
+        <!-- gallery 이미지 나열 -->
+      </div>
+      <div class="more_image">
+        <a href="#">이미지 더보기</a>
+      </div>
+    </section>
+
+    <!-- chefBox ============================== -->
+    <article id="chefBox">
+      <h2 class="blind">쉐프 추천</h2>
+
+    </article>
+
+    <!-- locationBox ========================== -->
+    <article id="locationBox">
+      <h2 class="blind">매장 위치 안내</h2>
+      <!-- 외부 이미지 불러와서 처리 -->
+    </article>
+
+    <!-- restoinfoBox ========================= -->
+    <footer id="restoinfoBox">
+      <div class="site_infomation">
+        <h2 class="blind">site infomation</h2>
+      </div>
+      <div class="site_cooperation">
+        <h3 class="blind">협력사이트</h3>
+      </div>
+    </footer>
+
+
+
+  </div>
+  <!-- script -->
+  <!-- <script src="../js/src/layout_009_rwd_resto.js"></script> -->
+</body>
+</html>
