@@ -30,7 +30,7 @@ console.log(und, type);
 
 console.log('my :', my);
 var my;
-// hoisting 현상 : 변수(함수)를 먼저 생성하지 않더라도, 상단으로 끌어올려지는 현상
+// hoisting 현상 : 변수(함수)를 먼저 생성하지 않더라도, 상단으로 끌어올려지는 현상, 변수 전에 선언
 
 // var -> let, const
 
@@ -51,7 +51,7 @@ type = typeof(obj);
 console.log(obj, type);
 
 console.log(line);
-// 목록의 나열 -> 배열 : array -> []
+// 목록의 나열 -> 배열 : array -> [] , 목록의 흐름
 // css는 첫번째를 1, js는 첫번째를 0으로 판단
 // 순서를 가진다.
 var ary = [
@@ -76,3 +76,9 @@ function myFn(n){
 }
 
 console.log( myFn('광현') );
+
+// js -> ' ', " " 구분하지 않음
+// json파일 -> property:value 모두 " " 사용해야 한다. 
+
+// 비교연산 ( &&, ||, ==, ===, !=, !==)
+// function (){}
