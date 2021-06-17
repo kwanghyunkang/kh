@@ -63,7 +63,7 @@ optionElement.append('2021');
 yearSelect.appendChild(optionElement);
 */
 
-/*
+/* 1차
 var y = 2021;
 var optionElement;
 
@@ -81,7 +81,8 @@ var yearSet = function(y){
   optionElement.append( y + '년');
   yearSelect.appendChild(optionElement);
 }
-/*
+
+/* 2차
 var y = 2021;
 var y2 = y - 150;
 for( ; y > y2 ; y-- ) {
@@ -89,7 +90,7 @@ for( ; y > y2 ; y-- ) {
 }
 */
 
-
+// 3차
 var date = new Date();
 var nowYear = date.getFullYear();
 var maxYear = nowYear - 150;
