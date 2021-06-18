@@ -1,0 +1,40 @@
+
+
+li {
+  position: relative;
+  float:left;
+  width: 200px;
+  height: 200px;
+  margin:0.5rem;
+  border:1px solid #333;
+  cursor:pointer;
+}
+li .img_set { 
+  width: 100%; height: 70%;
+  border-radius: 1rem; margin-bottom:1rem;
+  /* background-color: #ccf; */
+  background-size: auto 100%;
+  background-repeat:no-repeat;
+  background-position: 50% 50%;
+  transition:all 300ms ease;
+}
+li a:hover, li a:focus {
+  background-color: #f0f;
+  box-shadow:0.2rem 0.2rem 0.2rem rgba(0,0,0,0.3);
+}
+li a:hover .img_set,
+li a:focus .img_set {
+  background-size: auto 120%;
+}
+
+.other {
+  position: absolute;
+  top:0; left:0;
+  width: 100%; height: 100%;
+  padding:2rem; box-sizing: border-box;
+  background-color: rgba(255,255,0,0.5);
+}
+li:hover > .other,
+li:focus > .other {
+  display: block;
+}
