@@ -24,7 +24,7 @@ var product = productArea.getElementsByClassName('product')[0];
 // sample data 형식
 var dataCheck = {
   link      : 'http://naver.com',
-  imgSrc    : '../img/undraw/undraw_Coding_re_iv62.png',
+  imgSrc    : '../img/undraw/undraw_01.png',
   imgNarr   : '카드에 들어갈 이미지 설명 _001',
   cardTitle : '카드 제목 _001'
 };
@@ -66,25 +66,25 @@ var makeLiFn = function(listData) {
   var cardDataAll = [
     {
       link      : 'http://naver.com',
-      imgSrc    : 'undraw_Coding_re_iv62.png',
+      imgSrc    : 'undraw_01.png',
       imgNarr   : '카드에 들어갈 이미지 설명 _001',
       cardTitle : '카드 제목 _001'
     },
     {
       link      : 'http://daum.net',
-      imgSrc    : 'undraw_Gift_re_qr17.png',
+      imgSrc    : 'undraw_06.png',
       imgNarr   : '카드에 들어갈 이미지 설명 _002',
       cardTitle : '카드 제목 _002'
     },
     {
       link      : 'http://naver.com',
-      imgSrc    : 'undraw_Group_selfie_re_h8gb.png',
+      imgSrc    : 'undraw_03.png',
       imgNarr   : '카드에 들어갈 이미지 설명 _003',
       cardTitle : '카드 제목 _003'
     },
     {
       link      : 'http://daum.net',
-      imgSrc    : 'undraw_Playful_cat_re_bxiu.png',
+      imgSrc    : 'undraw_02.png',
       imgNarr   : '카드에 들어갈 이미지 설명 _004',
       cardTitle : '카드 제목 _004'
     }
