@@ -117,12 +117,15 @@ li:hover > .other,
 li:focus > .other { display: block; }
 */
 
+/* li { position:relative; } */
 
 .line_focus {
+  position:absolute; top:0; left:0;
   width: 100%; height: 100%;
 }
 
 .line_focus > div {
+  position:absolute; top:0; left:0;
   width: 100%; height: 100%;
 }
 
