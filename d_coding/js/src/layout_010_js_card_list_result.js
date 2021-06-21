@@ -22,6 +22,8 @@ var product = document.getElementsByClassName('product')[0];
 // 6. 양이 많아지므로 반복처리되는 기능을 함수처리 
 var makeLiFn = function(data){
   var makeLi = document.createElement('li');
+  // focus기능을 주기위한 속성
+  makeLi.setAttribute('tabindex',0);
   product.appendChild(makeLi);
 
   // 6-1. 빠진 li내부 요소를 첨부
@@ -83,7 +85,7 @@ var testCard = {
 // 8-1. 객체의 내용이 들어가는 것을 확인했으니, 추가 객체내용을 작성하거나, 속성의 이름을 변경해서 처리하도록 하자
 var cardListData = [
   {
-    baseImage            : '../img/card_list/coffee-cup.svg',
+    baseImage            : 'coffee-cup.svg',
     baseParagraph        : '카드 이미지 샘플_001',      
     title                : 'coffee',    
     detail               : '상품 디테일 설명',  
@@ -93,7 +95,7 @@ var cardListData = [
     settingColor         : '#fdd'
   },
   {
-    baseImage            : '../img/card_list/coffee-beans.svg',
+    baseImage            : 'coffee-beans.svg',
     baseParagraph        : '카드 이미지 샘플_001',      
     title                : 'coffee-beans',    
     detail               : '상품 디테일 설명',  
@@ -162,16 +164,75 @@ for(; i < cardLen ; i++ ){
 
 var productLi = product.getElementsByTagName('li');
 // console.log(productLi);
-var addAct = function(){
-  productLi[0].classList.add('act');
-};
-var removeAct = function(){
-  productLi[0].classList.remove('act');
+var productLiOther = productLi[0].getElementsByClassName('other')[0];
+
+
+var addAct = function(n){
+  return function(){
+    var productLiOther = productLi[n].getElementsByClassName('other')[0];
+    productLiOther.style.display = 'block';
+    setTimeout(function(){
+      productLi[n].classList.add('act');
+    }, 100);
+  }
 };
 
-productLi[0].addEventListener('mouseenter', addAct);
-productLi[0].addEventListener('focus', addAct);
-productLi[0].addEventListener('mouseleave', removeAct);
-productLi[0].addEventListener('blur', removeAct);
+var removeAct = function(n){
+  return function(){
+    var productLiOther = productLi[n].getElementsByClassName('other')[0];
+    productLi[n].classList.remove('act');
+    setTimeout(function(){
+      productLiOther.style.display = 'none';
+    }, 300);
+  }
+};
+
+var liEventAD = function(n){
+productLi[n].addEventListener('focus', addAct(n) );
+productLi[n].addEventListener('focus', addAct(n) );
+var liLink = productLi[n].getElementsByTagName('a')[0];
+      liLink.addEventListener('blur',  removeAct(n)) ;
+productLi[n].addEventListener('mouseleave', removeAct(n) );
+};
+
+
+var liLen = productLi.length;
+i = 0;
+for( ; i < liLen ; i += 1 ){
+  liEventAD(i);
+}
+
+
+
+// -----------------------------------------
+
+// var addAct = function(i){
+//   return function(){
+//   productLi[i].classList.add('act');
+//   }
+// };
+// var removeAct = function(i){
+//   return function(){
+//   productLi[i].classList.remove('act');
+//   }
+// };
+
+// var Act = function(i){
+//   return function(){
+//     console.log(i)
+//   }
+// }
+
+// var i = 0;
+// for( ; i < cardLen ; i += 1 ){
+//   (function(index){
+//     productLi[index].addEventListener('mouseenter', addAct(index) );
+//     productLi[index].addEventListener('focus', addAct(index) );
+//     productLi[index].addEventListener('mouseleave', removeAct(index) );
+//     productLi[index].addEventListener('blur', removeAct(index) );
+//   })(i);
+// }
+
+
 
 // 16. 기능들을 정리한다.
