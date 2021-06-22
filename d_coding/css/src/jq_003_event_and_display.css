@@ -8,7 +8,7 @@
   border:1px solid #eee;
   border-radius:0.3rem;
   background-color: #fff;
-  box-shadow:0.2rem 0.2rem 0.5rem rgba(0,0,0,0.2),
+  box-shadow: 0.2rem 0.2rem 0.5rem rgba(0,0,0,0.2),
             -0.2rem -0.2rem 0.5rem rgba(255,255,255,0.8);
 }
 
@@ -47,4 +47,3 @@ button {
 .box.act {
   background-image: url("../../img/bg/background_002.jpg");
 }
-

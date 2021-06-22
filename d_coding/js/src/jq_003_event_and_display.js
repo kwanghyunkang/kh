@@ -103,6 +103,9 @@
   // $(this)의 이벤트발생의 주체 => 'li'
   // var thisI = $(this).index(); -> thisI 변수가 순서가 몇번째인지(index)
 
+  // on ('이벤트', function(){})
+  // 이벤트 : click, dblclick, mouseenter, mouseleave, keydown, keyup, keypress, scroll ...
+  // css () : css ({display : 'none' || 'block'})
 
 
 })(jQuery);
