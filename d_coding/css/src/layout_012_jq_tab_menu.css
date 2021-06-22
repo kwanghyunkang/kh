@@ -1,0 +1,120 @@
+/* css/src/layout_012_jq_tab_menu.css */
+
+#wrap {
+  width: 80%; min-width:800px; max-width:1200px;
+  height: auto;
+  margin:auto;
+}
+
+h1 {
+  font-size:1.5rem; padding-bottom:1rem;
+}
+
+h2 {
+  padding:1rem;
+  margin-bottom:1rem;
+  background-color: #7df;
+}
+.part {
+  width: 100%; height: 50rem;
+  border:0.125rem solid #aaa;
+  padding:0.5rem; box-sizing: border-box;
+  border-radius:0.2rem;
+  box-shadow:0.2rem 0.2rem 0.5rem rgba(51,51,51,0.5);
+}
+
+h3 {
+  width: 100%; height: auto; margin-bottom:0.5rem;
+}
+
+.tab_list {
+  width: 100%; height: auto;
+  padding-top:0.3rem;
+  padding-bottom:0.5rem;
+  border-bottom:0.02rem solid #555;
+}
+
+.tab_list ul {
+  width: 100%; height: auto;
+}
+
+.tab_list ul:after,
+.tab_list ul::after { 
+  content:" "; display: block; clear:both; 
+}
+
+.tab_list li {
+  position:relative;
+  float: left;
+  width: 25%; height:30px;
+  line-height:30px;
+  padding-right:0.5rem; box-sizing: border-box;
+  text-align:center;
+}
+
+.tab_list li:last-child  { padding-right:0; }
+
+.tab_list li:last-child:after,
+.tab_list li:last-child::after { display : none; }
+
+.tab_list li:after,
+.tab_list li::after {
+  content:" "; display: block;
+  position:absolute; top:50%; right:0.25rem;
+  width: 1px; height: 15px;
+  transform:translateY(-50%);
+  background-color: #777;
+}
+
+
+.tab_list button {
+  width: 100%; height: 100%;
+  background-color: #dfdfdf;
+  box-sizing: border-box;
+  transition:all 300ms linear;
+}
+.tab_list button:focus {
+  border-bottom:0.5rem solid #555;
+}
+.tab_list button:hover {
+  background-color: #5fa;
+}
+
+.tab_list li.act {
+  color:#057; 
+}
+.tab_list li.act button {
+  /* color:#fff; font-weight:700; */
+  font-size: 1.2rem;
+  background-color: transparent;
+}
+
+.tab_content {
+  width: 100%; height: 700px;
+  margin-top:0.8rem;
+  padding:0.5rem; box-sizing: border-box;
+  background-color: #dfdfdf;
+  overflow:hidden;
+}
+
+.content {
+  display: none;
+  width: 100%; height: 670px;
+  padding:1rem; box-sizing: border-box;
+  color:#fff; font-weight:700;
+  line-height:1.5;
+  transition:all 300ms ease;
+}
+
+.content:focus {
+  border:1rem solid rgba(51,51,51,0.3);
+}
+
+.content:nth-of-type(1) {
+  display: block; 
+  background-color: #a2902a;
+}
+.content:nth-of-type(2) { background-color: #12dd7c;}
+.content:nth-of-type(3) { background-color: #5ffaf0;}
+.content:nth-of-type(4) { background-color: #c0d0f3;}
+/* .content.act { display : block; } */
