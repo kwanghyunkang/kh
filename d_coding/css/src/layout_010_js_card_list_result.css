@@ -22,7 +22,7 @@ li {
   height: 200px;
   margin:0.5rem;
   border:1px solid #777;
-  border-radius:50%;
+  /* border-radius:50%; */
   background-color: #fff;
   cursor:pointer;
 }
@@ -42,7 +42,7 @@ li {
   height: 100%;
   padding:2rem; box-sizing: border-box;
   background-color: rgba(250,180,10,0.8);
-  border-radius:50%;
+  /* border-radius:50%; */
   cursor:default;
   transition: all 300ms ease;
 }
@@ -135,7 +135,7 @@ li:focus > .other { display: block; }
 .line_focus > div:after {
   content:" "; display:block;
   position:absolute;
-  /* background-color: #131313; */
+  background-color: #131313;
   transition:all 300ms ease;
 }
 

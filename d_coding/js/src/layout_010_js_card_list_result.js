@@ -105,17 +105,17 @@ var cardListData = [
     settingColor         : '#ffd' 
   },
   {
-    baseImage            : 'img_burger53.png',
+    baseImage            : 'coffee-cup.svg',
     baseParagraph        : '카드 이미지 샘플_001',      
-    title                : '햄치킨마요버거',    
-    detail               : '햄 & 치킨마요',  
+    title                : 'coffee',    
+    detail               : '상품 디테일 설명',  
     buttonNarration      : '상세보기',
     linkUrl              : 'http://google.com', 
     detailPageNarration  : '원두 내용 상세 보기',
     settingColor         : '#dff' 
   },
   {
-    baseImage            : '../img/card_list/coffee-beans.svg',
+    baseImage            : 'coffee-beans.svg',
     baseParagraph        : '카드 이미지 샘플_001',      
     title                : 'coffee-beans',    
     detail               : '상품 디테일 설명',  
