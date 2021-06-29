@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<!-- html/js_013_gallery_01.html -->
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--[if IE]> 
+    <script src="../ie/html5shiv/dist/html5shiv.min.js"></script>
+    <sccipt src="../ie/ie9js/ie9.min.js"></script>
+    <script src="../ie/csspie/PIE.js"></script>
+    <script src="../ie/responsive.min.js"></script>
+    <![endif]-->
+  <link rel="shortcut icon" href="favicon.png" type="image/png"> 
+  <link rel="apple-touch-icon" href="favicon.png">
+
+  <link rel="perconnect" href="http://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../fonts/fontawesome5/css/all.min.css">
+
+  <link rel="stylesheet" href="../css/base/reset.css">
+  <link rel="stylesheet" href="../css/base/common.css">
+  <link rel="stylesheet" href="../css/src/js_013_gallery_01.css">
+
+  <title>웹 기초</title>
+
+</head>
+<body>
+  <!-- layout -->
+  <div id="wrap">
+    <h1>웹표준</h1>
+    <hr />
+    <h2>갤러리 이미지</h2>
+
+    <div class="part">
+      <h3>기본형 갤러리 이미지 - 글자 적용 예시</h3>
+      <div class="big_image gallery_box_01">
+        <p>이미지에 대한 설명</p>
+      </div>
+      <div class="list_image gallery_01">
+        <ul>
+          <li><a href="#" 
+            data-text="필요한 내용을 열심히 작성01"> 
+            <span>이미지 설명_01</span>
+          </a></li>
+          <li><a href="#" 
+            data-text="필요한 내용을 열심히 작성02">
+            <span>이미지 설명_02</span>
+          </a></li>
+          <li><a href="#" 
+            data-text="필요한 내용을 열심히 작성03">
+            <span>이미지 설명_03</span>
+          </a></li>
+          <li><a href="#" 
+            data-text="필요한 내용을 열심히 작성04">
+            <span>이미지 설명_04</span>
+          </a></li>
+          <li><a href="#" 
+            data-text="필요한 내용을 열심히 작성05">
+            <span>이미지 설명_05</span>
+          </a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- data-text : 임시 속성 -->
+    <!-- gallery 2 -->
+
+    <div class="part gallery_02">
+      <h3>기본형 갤러리 이미지 - 이미지 적용</h3>
+      <div class="big_image">
+        <p>이미지에 대한 설명</p>
+      </div>
+      <div class="list_image blind_wrap">
+        <ul>
+          <li>
+            <a href="#" 
+            data-image="image_001.jpg"
+            data-text="001_text">
+              <span>이미지 설명_01</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" 
+            data-image="image_002.jpg"
+            data-text="002_text">
+              <span>이미지 설명_02</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" 
+            data-image="image_003.jpg"
+            data-text="003_text">
+              <span>이미지 설명_03</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" 
+            data-image="image_004.jpg"
+            data-text="004_text">
+              <span>이미지 설명_04</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" 
+            data-image="image_005.jpg"
+            data-text="005_text">
+              <span>이미지 설명_05</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- // gallery 2 -->
+
+    <!-- gallery 3 -->
+    <div class="part gallery_03">
+      <h3>기본형 갤러리 이미지 - js에서 내용을 담고 이후에 처리(기본코드는 복사)</h3>
+
+      <div class="list_image">
+        <!-- <img src="../img/gallery/thumnail/" alt=""> -->
+        <ul>
+          <!-- <li>
+            <a href="#">
+              <span>이미지 01</span>
+            </a>
+          </li> -->
+        </ul>
+      </div>
+
+      <div class="big_image">
+        <p>이미지에 대한 설명</p>
+      </div>
+
+      </div> 
+    <!-- // gallery 3 -->
+
+  <!-- script -->
+  <script src="../js/jquery/jquery-3.6.0.min.js"></script>
+  <script src="../js/jquery/jquery-ui.min.js"></script>
+  <script src="../js/src/js_013_gallery_01.js"></script>
+</body>
+</html>
