@@ -26,6 +26,8 @@
   background-position: 50% 50%;
 }
 
+.none { display:none; } 
+
 .first_float > li { float:left; }
 .first_float > li:first-child { margin-left:0; }
 
