@@ -62,8 +62,8 @@
   // 응용방법 : 배너광고형태 중 fade형식으로 되는 형태를 이해 할 수 있다.
   // ==============================================
 
-  var makeLi = '<li><a href="#"><span>이미지_01</span></a></li>'
-  var gallery = $('.gallery')
+  var makeLi = '<li><a href="#"><span>이미지_01</span></a></li>';
+  var gallery = $('.gallery');
   var thumnail = gallery.find('.thumnail');
   var big_image = gallery.find('.big_image');
   var bigContent = big_image.children('.big_content');
