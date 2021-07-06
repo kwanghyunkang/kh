@@ -1,0 +1,92 @@
+/* js_017_banner_03_indicator.css */
+
+/* wrap ======================================= */
+#wrap {
+  width: 100%; max-width:1600px; height: auto;
+  margin:auto; margin-bottom:100px;
+  padding-bottom:200px;
+  /* background-color: #ddd; */
+}
+/* wrap // ======================================= */
+
+/* part 광고배너영역 큰 틀 세팅 ========================= */
+.part {
+  position:relative;
+  width: 100%; max-width:1600px; height: auto;
+  margin:auto; margin-left:1rem; padding-bottom:4rem;
+  background-color: #ccc;
+}
+/* part // ======================================= */
+
+/* h2 ======================================= */
+h2 {
+  width: 100%; height: auto;
+  padding:1rem; box-sizing: border-box;
+  font-size:1.5rem; margin-bottom:1rem;
+  text-align:center;
+}
+/* h2 // ======================================= */
+
+/* indicator ======================================= */
+.indicator { 
+  position:absolute;
+  left:0; right:0; bottom:1rem;
+  width: 100%; height: auto;
+  margin:auto;
+  text-align:center;
+  /* background-color: #05f; */
+ }
+ .indicator ul {
+   display: inline-block;
+   width: auto; height: auto;
+   border-radius:3rem;
+   /* background-color: #aaf; */
+ }
+ .indicator li {
+   display: inline-block;
+   width: 2rem; height: 2rem;
+   padding:0.3rem;
+   margin-right:1rem;
+   /* background-color: #fff; */
+ }
+ .indicator li:last-child { margin-right:0; }
+ .indicator li a {
+   display: block;
+   width: 100%; height: 100%;
+   background-color: #fff;
+   border-radius:2rem;
+   box-sizing: border-box;
+   transition:all 500ms ease;
+ }
+ .indicator li.act { width:3rem; }
+ .indicator li.act a { background-color: #fa0; }
+
+ .indicator a:hover {box-shadow: 0.2rem 0.2rem 0.2rem #151515;}
+ .indicator a:focus {
+   outline:0; border: 2px solid #151515;
+ }
+/* indicator // ======================================= */
+
+/* view_area ======================================= */
+.view_area {
+  overflow: hidden;
+  width: 80%; height: 500px;
+  margin:auto; border:0.0625rem solid #333;
+  box-sizing:border-box;
+}
+.view_area ul {
+  width: 500%; height: 100%;
+  background-color: #aaa;
+}
+.view_area li {
+  float:left;
+  width:calc(100% / 5); height:100%;
+  padding:2rem; box-sizing: border-box;
+  font-size:2rem; font-weight:700;
+}
+#viewSelect_01{ background-color: #5ab;}
+#viewSelect_02{ background-color: #ba5;}
+#viewSelect_03{ background-color: #99e;}
+#viewSelect_04{ background-color: #7c3;}
+#viewSelect_05{ background-color: #f5f;}
+/* view_area // ======================================= */

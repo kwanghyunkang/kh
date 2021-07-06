@@ -56,11 +56,7 @@
 
   // =================================================
 
-
-  // 100. 1칸씩 이동
-  // 200. 이동 제한(최대값)
-  // 300. 무한으로 돌아가게 만들기 
-
+  
   var cloneLi = viewLi.eq(-1).clone();
   viewUl.prepend(cloneLi);
   var newViewLi = viewUl.children('li');
@@ -70,12 +66,14 @@
   viewUl.css({width: newLiLen * 100 + '%', position:'relative', left: -100 + '%'});
   newViewLi.css({width: 100 / newLiLen + '%'});
 
+  // 100. 다음버튼 클릭시 1칸 이동
   nextBtn.on('click', function(e){
     e.preventDefault();
     if(permission){
       permission = false;
       n += 1;
 
+      // 300. 무한으로 돌아가게 만들기
       if(n > viewLiLen-1 ){
       // n = viewLiLen-1;
       n = 0;
