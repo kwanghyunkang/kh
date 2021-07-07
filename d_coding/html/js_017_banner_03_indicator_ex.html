@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<!-- html/js_017_banner_03_indicator_ex.html -->
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--[if IE]> 
+    <script src="../ie/html5shiv/dist/html5shiv.min.js"></script>
+    <sccipt src="../ie/ie9js/ie9.min.js"></script>
+    <script src="../ie/csspie/PIE.js"></script>
+    <script src="../ie/responsive.min.js"></script>
+    <![endif]-->
+  <link rel="shortcut icon" href="favicon.png" type="image/png"> 
+  <link rel="apple-touch-icon" href="favicon.png">
+
+  <link rel="perconnect" href="http://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../fonts/fontawesome5/css/all.min.css">
+
+  <link rel="stylesheet" href="../css/base/reset.css">
+  <link rel="stylesheet" href="../css/base/common.css">
+  <link rel="stylesheet" href="../css/src/js_017_banner_03_indicator_ex.css">
+
+  <title>웹 기초</title>
+
+</head>
+<body>
+  <!-- layout -->
+  <div id="wrap">
+    <h1><a href="./all_contents.html">웹표준</a></h1>
+    <hr />
+    
+    <div class="part banner_01">
+      <h2>인디케이터와 슬라이드배너</h2>
+
+      <div class="indicator">
+        <ul class="clearfix blind_wrap">
+          <li class="act"><a href="#viewSelect_01"><span>광고 1번째 내용 요약</span></a></li>
+          <li><a href="#viewSelect_01"><span>광고 2번째 내용 요약</span></a></li>
+          <li><a href="#viewSelect_01"><span>광고 3번째 내용 요약</span></a></li>
+          <li><a href="#viewSelect_01"><span>광고 4번째 내용 요약</span></a></li>
+          <li><a href="#viewSelect_01"><span>광고 5번째 내용 요약</span></a></li>
+        </ul>
+      </div>
+
+      <div class="slide_btn">
+        <button type="button" class="next"><span class="blind">다음</span><i class="far fa-arrow-alt-circle-right"></i></button>
+        <button type="button" class="prev"><span class="blind">이전</span><i class="far fa-arrow-alt-circle-left"></i></button>
+      </div>
+
+      <div class="view_area">
+        <ul class="clearfix">
+          <li id="viewSelect_01">광고내용_01</li>
+          <li id="viewSelect_02">광고내용_02</li>
+          <li id="viewSelect_03">광고내용_03</li>
+          <li id="viewSelect_04">광고내용_04</li>
+          <li id="viewSelect_05">광고내용_05</li>
+        </ul>
+      </div>
+      
+    </div>
+    
+  </div>
+  <!-- script -->
+  <script src="../js/jquery/jquery-3.6.0.min.js"></script>
+  <script src="../js/jquery/jquery-ui.min.js"></script>
+  <script src="../js/src/js_017_banner_03_indicator_ex.js"></script>
+</body>
+</html>
