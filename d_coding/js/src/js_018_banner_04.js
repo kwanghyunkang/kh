@@ -43,7 +43,7 @@
   viewUl.prepend(cloneLi);
   var newViewLi = viewUl.find('li');
   var newViewLiLen = newViewLi.length;
-  viewUl.css({'position':'relative', 'left' :-100+'%', 'width': 100 * newViewLiLen + '%'});
+  viewUl.css({'position':'relative', 'left' : -100+'%', 'width': 100 * newViewLiLen + '%'});
   newViewLi.css({'width':100 / newViewLiLen + '%'});
 
   // 함수

@@ -31,7 +31,7 @@
     // $(this).parent().addClass('act');
 
     indiLi.eq(n).addClass('act');                       // act class가 실행되도록 한다
-    indiLi.eq(n).siblings().removeClass('act');         // 첫째 선택된거 외에 나머지 형제들을 제거
+    indiLi.eq(n).siblings().removeClass('act');         // 첫째 선택된거 외에 나머지 형제들을 제거 
   });
 
 })(jQuery);
