@@ -1,0 +1,23 @@
+
+#wrap {
+  position:relative;
+  width: 100%; height: auto; min-height:1000px;
+  margin:auto;
+  padding-bottom:1000px;
+  background-image: linear-gradient(90deg, #abc, #bec);
+}
+
+.part {
+  position:fixed;
+  top:0; bottom:0; left:0; right:0;
+  width:450px; height: 200px;
+  margin:auto;
+  padding:1rem; box-sizing: border-box;
+  background-color:#fff;
+}
+.part p {
+  margin:bottom 0.5rem;
+}
+.part p span {
+  padding:0.1rem; background-color: #fc0;
+}
