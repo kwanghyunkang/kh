@@ -86,7 +86,7 @@ var deviceWidth = function(){
   // 외부에서 불러와서 deviceType에 저장
   var deviceType = importDevice;
   var checkType;
-  var winWidth = win.outerWidth(true);
+  var winWidth = win.outerWidth(true); //500
   
   // if(winWidth < deviceType[3].size){
   //   checkType = deviceType[3].type;
@@ -98,7 +98,7 @@ var deviceWidth = function(){
   //   checkType = deviceType[0].type;
   // }
 
-  var intSize;
+  var intSize;    // win.outerWidth(true) 값에 따라 device_type에서 지정해놓은 값에 해당하는 것을 찾아 결과를 도출해낸다.
   var i = deviceType.length-1;                // 
   for(; i>=0 ; i-=1){                         // i 값이 첫번째보다 크거나 같을때 ; i의 값을 1씩 줄인다.
     intSize = parseInt(deviceType[i].size);   // deviceType요소들의 크기를 정수값으로
@@ -106,7 +106,7 @@ var deviceWidth = function(){
       checkType = deviceType[i].type;         // 
       break;                                  // 반복문을 중간에 멈추게 하는 역할 / break를 사용하지 않는다면,
     }else{                                    // 조건이 맞았을때까지만 실행하고 그 뒤는 반복수행을 끝낸다.  
-      checkType = deviceType[i].type;
+      checkType = deviceType[i].type;         // 
     }
   }
   return checkType;
