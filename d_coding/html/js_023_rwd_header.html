@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<!-- html/js_023_rwd_header.html -->
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--[if IE]> 
+    <script src="../ie/html5shiv/dist/html5shiv.min.js"></script>
+    <sccipt src="../ie/ie9js/ie9.min.js"></script>
+    <script src="../ie/csspie/PIE.js"></script>
+    <script src="../ie/responsive.min.js"></script>
+    <![endif]-->
+  <link rel="shortcut icon" href="favicon.png" type="image/png"> 
+  <link rel="apple-touch-icon" href="favicon.png">
+
+  <link rel="perconnect" href="http://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../fonts/fontawesome5/css/all.min.css">
+
+  <link rel="stylesheet" href="../css/base/reset.css">
+  <link rel="stylesheet" href="../css/base/common.css">
+  <link rel="stylesheet" href="../css/src/js_023_rwd_header.css">
+
+  <title>웹 기초</title>
+
+</head>
+<body>
+  <!-- layout -->
+  <div id="wrap">
+    <header id="headBox">
+      <div class="container">
+        <h1><a href="./all_contents.html">웹표준</a></h1>
+        <nav id="unb">
+          <h2 class="blind">유틸리티 내비게이션</h2>
+          <ul class="unb_list blind_wrap">
+            <li><a href="#"><i class="fas fa-globe"></i><span>한국어</span></a></li>
+            <li><a href="#"><i class="fas fa-map-marked-alt"></i><span>위치안내</span></a></li>
+            <li><a href="#"><i class="fas fa-user"></i><span>회원로그인</span></a></li>
+          </ul>
+        </nav>
+
+        <nav id="gnb">
+          <h2 class="blind">전체 내비게이션</h2>
+
+          <div class="gnb_btn act">
+            <button type="button">
+              <span class="blind">전체 메뉴</span>
+              <i class="line line1"></i>
+              <i class="line line2"></i>
+              <i class="line line3"></i>
+            </button>
+          </div>
+
+          <ul class="gnb_list">
+            <li>
+              <div class="nav_title"><a href="#">about us</a></div>
+              <ul class="nav_content">
+                <li><a href="#">연혁</a></li>
+                <li><a href="#">인사말</a></li>
+                <li><a href="#">위치안내</a></li>
+                <li><a href="#">브랜드 가이드</a></li>
+              </ul>
+            </li>
+            <li>
+              <div class="nav_title"><a href="#">menu</a></div>
+              <ul class="nav_content">
+                <li><a href="#">커피</a></li>
+                <li><a href="#">쥬스</a></li>
+                <li><a href="#">쿠키</a></li>
+                <li><a href="#">기타</a></li>
+              </ul>
+            </li>
+            <li>
+              <div class="nav_title"><a href="#">gift</a></div>
+              <ul class="nav_content">
+                <li><a href="#">커피</a></li>
+                <li><a href="#">텀블러</a></li>
+                <li><a href="#">시즌상품</a></li>
+              </ul>
+            </li>
+            <li>
+              <div class="nav_title"><a href="#">notice</a></div>
+              <ul class="nav_content">
+                <li><a href="#">frequently and answer</a></li>
+                <li><a href="#">인사말</a></li>
+                <li><a href="#">위치안내</a></li>
+                <li><a href="#">브랜드가이드</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section id="viewBox">
+      <h2>광고영역</h2>
+    </section>
+    <section id="contentBox">
+      <h2>광고영역</h2>
+    </section>
+
+
+  </div>
+  <!-- script -->
+  <script src="../js/jquery/jquery-3.6.0.min.js"></script>
+  <script src="../js/jquery/jquery-ui.min.js"></script>
+  <script src="../js/src/js_023_rwd_header.js"></script>
+</body>
+</html>
