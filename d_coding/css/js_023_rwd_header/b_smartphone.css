@@ -21,10 +21,10 @@
 
   #unb {
     float:right;
-    width: 100px; height: 3rem;
+    width: 6.25rem; height: 3rem;
     padding:0.5rem; box-sizing: border-box;
   }
-  .unb_list { width: 100%; height: 100%; /*background-color: #ddd;*/ }
+  .unb_list { width: 100%; height: 100%; }
 
   .unb_list li {
     float:right;
@@ -50,19 +50,22 @@
     .line {
       display: block;
       position:absolute; top:0; bottom:0; left:0; right:0;
-      width: 100%; height: 2px;
-      margin:auto;
+      width: 100%; height: 2px; margin:auto;
       background-color: #151515;
+      transition:all 300ms linear;
     }
-    .line1 { transform: translateY(-0.8rem);}
-    .line3 { transform: translateY(0.8rem); }
+    .line1 { transform: translateY(-0.7rem);}
+    .line3 { transform: translateY(0.7rem); }
 
-    .gnb_btn.act .line1 { transform: translateY(0) rotate(45deg); }
-    .gnb_btn.act .line2 { height:0; }
-    .gnb_btn.act .line3 { transform: translateY(0) rotate(-45deg); }
-    .gnb_btn .gnb_list { display:block; }
+    #gnb_btn.act .line1 { transform: translateY(0) rotate(45deg); }
+    /* #gnb.act .line1 { width:0; } */
+    #gnb_btn.act .line2 { width:0; height:0; opacity:0; }
+    #gnb_btn.act .line3 { transform: translateY(0) rotate(-45deg); }
+    /* #gnb.act .line3 { width:0; } */
+    #gnb_btn .gnb_list { display:block; }
 
-    .gnb_list { display: none;
+    .gnb_list { 
+      display: none;
       position:fixed;
       top:0; left:0;
       width: 100%; height: 100%;
