@@ -64,8 +64,8 @@
   // 반응형웹 구현이 불가능할 경우
   if(!rwdCheck){
     console.log('접속 브라우저가 반응형구현 또는 flex구조가 아니기 때문에 사용하기 불편할 수 있다.'); // ie -> flex아예 안먹음
-    $('.device').hide();
-    $('.old').show();
+    // $('.device').hide();
+    // $('.old').show();
   }else{
     // ie가 아닌 반응형 가능한 브라우저
     // 범위는 하위 전부 ~~resize 까지
