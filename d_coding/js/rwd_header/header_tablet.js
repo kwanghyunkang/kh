@@ -8,7 +8,7 @@ var gnbBtn = gnb.find('.gnb_btn').children('button');
 var gnbList = gnb.find('.gnb_list');
 var timed = 500;
 
-// tablet에서는 오른쪽 끝에서 들엉는 형식으로 진행
+// tablet에서는 오른쪽 끝에서 들어있는 형식으로 진행
 // 100. gnbBtn을 클릭시 gnbList가 나타나게/사라지게
 // 102. css에서 오른쪽끝으로 (바깥으로 이동되어 있도록)
 
@@ -23,7 +23,7 @@ gnbBtn.on('click', function(e){
       gnbList.hide(); // gnbList를 숨김
     });
 
-  }else{
+  }else{ 
     gnb.addClass('act');
     gnbList.show(0, function(){
       gnbList.stop().animate({ right:-30+'%' });

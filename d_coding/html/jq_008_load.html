@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<!-- html/jq_008_load.html -->
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--[if IE]> 
+    <script src="../ie/html5shiv/dist/html5shiv.min.js"></script>
+    <sccipt src="../ie/ie9js/ie9.min.js"></script>
+    <script src="../ie/csspie/PIE.js"></script>
+    <script src="../ie/responsive.min.js"></script>
+    <![endif]-->
+  <link rel="shortcut icon" href="favicon.png" type="image/png"> 
+  <link rel="apple-touch-icon" href="favicon.png">
+
+  <link rel="perconnect" href="http://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../fonts/fontawesome5/css/all.min.css">
+
+  <link rel="stylesheet" href="../css/base/reset.css">
+  <link rel="stylesheet" href="../css/base/common.css">
+  <link rel="stylesheet" href="../css/src/jq_008_load.css">
+
+  <title>웹 기초</title>
+
+</head>
+<body>
+  <!-- layout -->
+  <div id="wrap">
+    <!-- <h1><a href="./all_contents.html">웹표준</a></h1>
+    <hr />  -->
+    
+    1. 큰 영역은 그대로
+    2. 각 영역에 들어갈 html문서를 별도로 나누기
+      2-1. 각 영역별 구분을 명확하게
+      2-2. 동일한 영역 반복되는 곳을 찾기
+      2-3. main, sub 각 페이지별 구분되는 영역 찾기
+      2-4. 동일한 영역에 사용하는 js만 별도로 분리
+      2-5. 각 페이지별로 구분되는 영역 분리
+      2-6. 공통으로 사용되는 js기능 분리
+      2-7. 각 페이지별 외부문서(json data)와 연결하여 사용하는 기능
+
+- load() : load(불러올 파일, function(){ 파일을 불러온 이후 사용할 기능 });
+ 
+
+
+  </div>
+  <!-- script -->
+  <script src="../js/jquery/jquery-3.6.0.min.js"></script>
+  <script src="../js/jquery/jquery-ui.min.js"></script>
+  <script src="../js/src/jq_008_load.js"></script>
+</body>
+</html>
