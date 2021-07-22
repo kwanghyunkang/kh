@@ -40,7 +40,6 @@
     }else if(movePercent > 100){
       movePercent = 100;
     }
-    console.log(movePercent);
     return movePercent;
   };
 
@@ -66,11 +65,10 @@
   // setScrollFn();
 
   // 이벤트
-  win.on('scroll', function(){
+  setLiFn();
+  win.on('scroll', function(){ setLiFn(); });
     // st = 100 - setScrollFn();
     // partLi_0_img.css({backgroundPositionY:st+'%'});
-    setLiFn();
-  });
   
 
 
