@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<!-- html/js_025_landing.html -->
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--[if IE]> 
+    <script src="../ie/html5shiv/dist/html5shiv.min.js"></script>
+    <sccipt src="../ie/ie9js/ie9.min.js"></script>
+    <script src="../ie/csspie/PIE.js"></script>
+    <script src="../ie/responsive.min.js"></script>
+    <![endif]-->
+  <link rel="shortcut icon" href="favicon.png" type="image/png"> 
+  <link rel="apple-touch-icon" href="favicon.png">
+
+  <link rel="perconnect" href="http://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../fonts/fontawesome5/css/all.min.css">
+
+  <link rel="stylesheet" href="../css/base/reset.css">
+  <link rel="stylesheet" href="../css/base/common.css">
+  <link rel="stylesheet" href="../css/src/js_025_landing.css">
+
+  <title>웹 기초</title>
+
+</head>
+<body>
+  <!-- layout -->
+  <div id="wrap">
+    <div class="info">
+      <h1><a href="./all_contents.html">웹표준</a></h1>
+      <hr />
+      <h2>landing 효과 구현</h2>
+      <P>landing : 스크롤이 일정위치가 오면, 동작을 처리해서 우리가 보고자하는 형태로 안착하는 것 </P>
+
+      <ul>
+        <li>scroll 이벤트</li>
+        <li>이미지가 나타나는 방법 : opacity 0~1</li>
+        <li>나타나는 것을 효과를 좀 더 풍부하기위해서는 transform:transition() || margin-top || top</li>
+        <li>나타나는 시점은 화면상의 하단에서부터 약 1/3 ~ 1/4에서 나타나야 자연스럽다.</li>
+        <li>mousewheel, DOMMouseScroll 마우스휠에 의해 반응하는 기능 -> 휠값이 아래/위</li>
+        <li>mousewheel -> 120/-120 | DOMMouseScroll -> -3/3</li>
+        <li>수치를 통일 -> DOMMouseScroll수치 * -40</li>
+      </ul>
+      <hr />
+
+      <div class="narr">
+        <h2>mousewheel 처리</h2>
+        <p>firefox에서는 DOMMouseScroll 이벤트를 가지고, 이외는 mousewheel 이벤트를 가진다.</p>
+        <p>이때, 수치는 DOMMouseScroll에서는 -3/3의 수치를 가지고, mousewheel에서는 120/-120의 값을 가지고 있다.</p>
+        <p>그렇기에 둘의 동일한 수치를 만들고 이를 수행할 수 있도록 처리</p>
+      </div>
+
+    </div>
+
+    <div class="part">
+      <h2>리스트형식 내용</h2>
+      <!-- ul>li*4(.img_box+dl>dt{title}+dd{lorem15}+dd>a[href="#"]{내용 자세히보기}) -->
+      <ul>
+        <li>
+          <div class="img_box"><span class="blind">이미지에 대한 설명</span></div>
+          <dl>
+            <dt>title_01</dt>
+            <dd>Parallax landing pages use a background that moves slower than the foreground during scroll.</dd>
+            <dd><a href="#">내용 자세히보기</a></dd>
+          </dl>
+        </li>
+        <li>
+          <div class="img_box"><span class="blind">이미지에 대한 설명</span></div>
+          <dl>
+            <dt>title_02</dt>
+            <dd>This creates a 3D effect that — when used in moderation — can create a more rich, pleasing experience for your visitors.</dd>
+            <dd><a href="#">내용 자세히보기</a></dd>
+          </dl>
+        </li>
+        <li>
+          <div class="img_box"><span class="blind">이미지에 대한 설명</span></div>
+          <dl>
+            <dt>title_03</dt>
+            <dd>Get ready to fill that appointment book. This theme’s built-in lightboxes allow you to include full image galleries of your latest real estate development.</dd>
+            <dd><a href="#">내용 자세히보기</a></dd>
+          </dl>
+        </li>
+        <li>
+          <div class="img_box"><span class="blind">이미지에 대한 설명</span></div>
+          <dl>
+            <dt>title_04</dt>
+            <dd>Simple wows. More importantly, it works. Start with an attention-grabbing video background,</dd>
+            <dd><a href="#">내용 자세히보기</a></dd>
+          </dl>
+        </li>
+      </ul>
+    </div>
+
+
+  </div>
+  <!-- script -->
+  <script src="../js/jquery/jquery-3.6.0.min.js"></script>
+  <script src="../js/jquery/jquery-ui.min.js"></script>
+  <script src="../js/src/js_025_landing.js"></script>
+  <script src="../js/src/js_025_mousewheel.js"></script>
+</body>
+</html>
