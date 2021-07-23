@@ -1,12 +1,6 @@
 
 (function($){
   //jQuery
-  /*
-  // 1. event - scroll -> 스크롤된 값을 파악 ( scrollTop() )
-  // 2. background-position : 0~100%
-  // 3. 화면의 하단(시작부분) 상단에 있는 영역(끝부분)
-  // 4. 화면의 영역을 0~100%로 구분하는 방법
-  */
 
   // 변수
   var win = $(window);
@@ -66,10 +60,9 @@
 
   // 이벤트
   setLiFn();
-  win.on('scroll', function(){ setLiFn(); });
-    // st = 100 - setScrollFn();
-    // partLi_0_img.css({backgroundPositionY:st+'%'});
-  
+  win.on('scroll', function(){ 
+    setLiFn(); 
+  }); // setLiFn();
 
 
 })(jQuery);

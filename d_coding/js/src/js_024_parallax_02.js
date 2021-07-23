@@ -1,4 +1,4 @@
-// js_024-2_parallax_02.js
+// js_024_parallax_02.js
 (function($){
 
     // 스크롤시 가져오는 위치의 %값 계산
@@ -22,7 +22,7 @@
     var liOffset, liPImg, findScroll, percentScroll, per;
 
     var i=0;
-    for(; i < li.length ; i ++ ){
+    for(;i < li.length; i++ ){
       liPImg = li.eq(i).find('.position_img');
       liOffset = liPImg.offset().top;
       // ==============================================
