@@ -1,0 +1,59 @@
+/* jq_009_val.css */
+
+#wrap {
+  width: 800px; height: auto;
+  padding: 3rem; margin:auto;
+}
+.part {
+  width: 100%; height: auto;
+}
+form {
+  width: 100%; height: auto;
+  padding:1rem; box-sizing: border-box;
+  border:1px solid #999;
+}
+fieldset {
+  width: 100%; height: auto;
+  background-color: #acf; 
+}
+.row {
+  width: 100%; height: auto; padding:1rem; margin-bottom:0.5rem;
+}
+.row > label {
+  display:inline-block; width: 100%; height: auto;
+  font-size:1.5rem; margin-bottom:0.5rem;
+}
+.row > input {
+  width: 70%; height: 40px;
+  border-bottom:1px solid #555;
+  text-indent: 1rem; font-size:1.7rem;
+  color: #f06; text-indent: 1rem;
+  background-color:#fff;
+}
+.row > input::placeholder { color:#575757; }
+.row > input:focus { background-color: #fda; }
+
+.row_result {
+  padding:1rem; background-color: #ffe;
+}
+.row_result p.error   { color:#f00; }
+.row_result p.success { color: #070;}
+
+.send_btn {
+  width: 100%; height: auto;
+  padding:1rem; margin-top:1rem;
+}
+[type="reset"] {
+  padding:1rem; background-color: #555;
+  color:#fff; border-radius:0.3rem; box-sizing: border-box;
+}
+[type="submit"] {
+  float:left; /* float을 사용하면 display:block; */
+  margin-right:2rem;
+  padding:1rem 3rem; background-color: #f06;
+  color:#fff; font-weight:700;
+  border-radius:0.3rem; box-sizing: border-box;
+}
+
+.send_btn input:focus { border:2px solid #151515; }
+.send_btn input:hover { box-shadow: 0.2rem 0.2rem rgba(0,0,0,0.5); }
