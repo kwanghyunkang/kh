@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<!-- html/jq_010_plugin.html -->
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--[if IE]> 
+    <script src="../ie/html5shiv/dist/html5shiv.min.js"></script>
+    <sccipt src="../ie/ie9js/ie9.min.js"></script>
+    <script src="../ie/csspie/PIE.js"></script>
+    <script src="../ie/responsive.min.js"></script>
+    <![endif]-->
+  <link rel="shortcut icon" href="favicon.png" type="image/png"> 
+  <link rel="apple-touch-icon" href="favicon.png">
+
+  <link rel="perconnect" href="http://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../fonts/fontawesome5/css/all.min.css">
+
+  <link rel="stylesheet" href="../css/base/reset.css">
+  <link rel="stylesheet" href="../css/base/common.css">
+  <link rel="stylesheet" href="../css/src/jq_010_plugin.css">
+
+  <title>웹 기초</title>
+
+</head>
+<body>
+  <!-- layout -->
+  <div id="wrap">
+    <h1><a href="./all_contents.html">웹표준</a></h1>
+    <hr />
+    <h2>plugin을 이용한 만들기!</h2>
+
+    <div class="part one">
+      <button type="button">색상을 바꾸자</button>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum eum voluptatum maxime ad <br />
+        dicta aut quisquam, nemo, at porro deleniti aliquid tempora officia libero ullam debitis <br />
+        fugit similique. Nihil, nesciunt.
+      </p>
+    </div>
+    <div class="part two">
+      <button type="button">색상을 바꾸자</button>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum eum voluptatum maxime ad <br />
+        dicta aut quisquam, nemo, at porro deleniti aliquid tempora officia libero ullam debitis <br />
+        fugit similique. Nihil, nesciunt.
+      </p>
+    </div>
+    <div class="part three">
+      <button type="button">색상을 바꾸자</button>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum eum voluptatum maxime ad <br />
+        dicta aut quisquam, nemo, at porro deleniti aliquid tempora officia libero ullam debitis <br />
+        fugit similique. Nihil, nesciunt.
+      </p>
+    </div>
+    <div class="part four">
+      <button type="button">색상을 바꾸자</button>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum eum voluptatum maxime ad <br />
+        dicta aut quisquam, nemo, at porro deleniti aliquid tempora officia libero ullam debitis <br />
+        fugit similique. Nihil, nesciunt.
+      </p>
+    </div>
+
+  </div>
+  <!-- script -->
+  <script src="../js/jquery/jquery-3.6.0.min.js"></script>
+  <script src="../js/jquery/jquery-ui.min.js"></script>
+  <!-- <script src="../js/src/jq_010_plugin.js"></script> -->
+  <script src="../js/src/jq_010_plugin_02.js"></script>
+  <script>
+    (function($){
+      $('.one').makePlugIn_01().css({backgroundColor:'#faf'});
+      $('.two').makePlugIn_01('#fff');
+      $('.three').makePlugIn_01('rgba(255,100,50,0.5)');
+      $('.four').makePlugIn_02({ color:'#fff', bg:'#fa0', fs:'1rem' });
+    })(jQuery);
+  </script>
+</body>
+</html>

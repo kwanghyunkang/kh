@@ -1,0 +1,19 @@
+/* jq_010_plugin.css */
+
+#wrap {
+  width: 800px; height: auto;
+  margin:auto; border:1px solid #aaa; padding:5rem;
+  box-sizing: border-box;
+}
+.part {
+  width: 100%; height: auto;
+  margin:auto; margin-bottom:2rem;
+  background-color: #acf;
+}
+p { line-height: 1.3; }
+button {
+  margin:0.5rem;
+  padding:1rem;
+  color:#fff; font-weight:700;
+  background-color: #05a;
+}
