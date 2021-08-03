@@ -51,7 +51,7 @@ h3 {
   padding:0; box-sizing: border-box;
   /* background-color: #ddd; */
   border:5px solid #7ef;
-  overflow:hidden;
+  /* overflow:hidden; */
 }
 .product ul {
   width: 700%; height: 100%;
